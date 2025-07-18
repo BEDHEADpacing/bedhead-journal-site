@@ -18,9 +18,15 @@
       padding: 3em 1em 2em;
     }
 
+    header img {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 1em;
+    }
+
     header h1 {
-      font-size: 2.2em;
-      margin-bottom: 0.2em;
+      font-size: 2em;
+      margin-bottom: 0.5em;
     }
 
     header p {
@@ -30,21 +36,31 @@
       font-weight: 300;
     }
 
-    .sound-section {
-      padding: 2em 1em;
-      max-width: 700px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2em;
+      padding: 2em;
+      max-width: 1000px;
       margin: 0 auto;
     }
 
-    .sound-section h2 {
-      font-size: 1.4em;
+    .sound-tile {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 8px;
+      padding: 1em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .sound-tile h2 {
+      font-size: 1.2em;
       margin-bottom: 0.5em;
     }
 
-    .sound-section p {
+    .sound-tile p {
       font-size: 0.95em;
-      margin-bottom: 1em;
       font-weight: 300;
+      margin-bottom: 1em;
     }
 
     .video-container {
@@ -52,8 +68,7 @@
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
-      max-width: 100%;
-      margin-bottom: 2em;
+      border-radius: 4px;
     }
 
     .video-container iframe {
@@ -75,50 +90,57 @@
 </head>
 <body>
 
-  <header>
-    <h1>🛁 BEDHEAD Soundbath Room</h1>
-    <p>Choose your soundscape. Whether you're meditating, journaling, or trying to sleep, let the frequencies do the heavy lifting.</p>
-  </header>
+    <header>
+  <a href="index.html">
+    <img src="logo2nobg.png" alt="BEDHEAD Logo">
+  </a>
+  <h1>BEDHEAD Soundbath Room</h1>
+  <p>Choose your soundscape. Whether you're meditating, journaling, or trying to sleep, let the frequencies do the heavy lifting.</p>
+</header>
 
-  <div class="sound-section">
-    <h2>🌧 Rainfall</h2>
-    <p>Soothing rain without music. Ideal for focus or bedtime pacing rituals.</p>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Rainfall"></iframe>
-    </div>
-  </div>
+  <main class="grid">
 
-  <div class="sound-section">
-    <h2>🌀 528Hz Healing Tone</h2>
-    <p>Known as the “love frequency,” often used in sound healing or relaxation practices.</p>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="528Hz Tone"></iframe>
+    <div class="sound-tile">
+      <h2>Rainfall</h2>
+      <p>Soothing rain without music. Ideal for focus or bedtime pacing rituals.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Rainfall"></iframe>
+      </div>
     </div>
-  </div>
 
-  <div class="sound-section">
-    <h2>🎹 Lo-Fi Piano Loop</h2>
-    <p>Gentle ambient piano with minimal distraction. Great for journaling or unwinding.</p>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Lo-Fi Piano"></iframe>
+    <div class="sound-tile">
+      <h2>528Hz Healing Tone</h2>
+      <p>The “love frequency,” often used in sound healing or relaxation practices.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="528Hz Tone"></iframe>
+      </div>
     </div>
-  </div>
 
-  <div class="sound-section">
-    <h2>🧘‍♀️ Theta Binaural Beats</h2>
-    <p>Brainwave support for meditation, slow breathing, or drifting off.</p>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Theta Binaural Beats"></iframe>
+    <div class="sound-tile">
+      <h2>Lo-Fi Piano Loop</h2>
+      <p>Gentle ambient piano with minimal distraction. Great for journaling or unwinding.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Lo-Fi Piano"></iframe>
+      </div>
     </div>
-  </div>
 
-  <div class="sound-section">
-    <h2>🍃 Wind Through Trees</h2>
-    <p>Light wind in a quiet forest — calming, immersive, and grounding.</p>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Wind in Forest"></iframe>
+    <div class="sound-tile">
+      <h2>Theta Binaural Beats</h2>
+      <p>Brainwave support for meditation, slow breathing, or drifting off.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Theta Binaural Beats"></iframe>
+      </div>
     </div>
-  </div>
+
+    <div class="sound-tile">
+      <h2>Wind Through Trees</h2>
+      <p>Light wind in a quiet forest — calming, immersive, and grounding.</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Wind in Forest"></iframe>
+      </div>
+    </div>
+
+  </main>
 
   <footer>
     © BEDHEAD Journal. Audio content is embedded from public sources and credited to original creators.
