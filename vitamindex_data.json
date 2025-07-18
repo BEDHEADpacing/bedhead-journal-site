@@ -1,0 +1,973 @@
+[
+  {
+    "name": "Acetyl L-Carnitine (ALCAR) (Nootropic)",
+    "benefits": "Enhances mitochondrial energy production (especially in brain and muscles). May improve cognitive function and memory. Supports nerve regeneration and protects against neurodegeneration. Potential mood-lifting effects (may help in depression)",
+    "sources": "Minimal in food\u2014precursor L-Carnitine found in red meat and dairy. Capsules, powders",
+    "considerations": "May cause agitation or insomnia in sensitive individuals. May interact with thyroid medications. Should be taken earlier in the day due to possible stimulating effect",
+    "conditions": "Chronic fatigue syndrome (CFS/ME). Fibromyalgia. Peripheral neuropathy. Cognitive decline and Alzheimer\u2019s. Depression. Long Covid"
+  },
+  {
+    "name": "Activated Charcoal (Detox)",
+    "benefits": "Binds toxins and chemicals in the gut (detox aid). Used for acute poisoning/overdose treatment. May reduce gas and bloating",
+    "sources": "Capsules, powders",
+    "considerations": "Not for long-term use: may bind to nutrients and medications. Take away from food and medications (at least 2 hours apart). Can cause constipation",
+    "conditions": "Acute poisoning. Digestive discomfort (gas, bloating). Possible help in die-off reactions (Herxheimer) during antimicrobial protocols"
+  },
+  {
+    "name": "Alpha-Lipoic Acid (ALA) (Antioxidant)",
+    "benefits": "Potent antioxidant, both water- and fat-soluble. Enhances mitochondrial energy metabolism. Supports glucose metabolism and insulin sensitivity. May regenerate other antioxidants (e.g., Vitamin C, E, Glutathione)",
+    "sources": "Spinach, broccoli, organ meats (but in low amounts). Supplement capsules, R-ALA is a more bioavailable form",
+    "considerations": "Can lower blood sugar\u2014monitor if diabetic. Best taken on an empty stomach. May cause a sulfur-like odor or GI upset",
+    "conditions": "Diabetic neuropathy. Multiple sclerosis (adjunctively). Cognitive issues. Liver support. Chronic fatigue"
+  },
+  {
+    "name": "Anti-biotics",
+    "benefits": "Kill or inhibit the growth of bacteria, treat bacterial infections.",
+    "sources": "Natural sources: derived from microorganisms such as fungi, molds, and soil bacteria, e.g., penicillin from penicillium mold, streptomycin from streptomyces bacteria. Semisynthetic: chemically modified natural antibiotics for better absorption or spectrum, e.g., amoxicillin, cefalexin. Synthetic: fully lab-made with no natural origin, e.g., Ciprofloxacin, Linezolid",
+    "considerations": "Kill both good and bad bacteria. Do not work on viral infections (like the flu, common cold, or COVID-19 unless secondary bacterial infections are present). Overuse or misuse breeds resistant bacteria (e.g., MRSA). Resistance can lead to untreatable infections and hospitalizations.Take full prescribed course\u2014even if symptoms resolve early. Always combine with probiotic support (e.g., Saccharomyces boulardii, Lactobacillus rhamnosus GG). Avoid use for viral infections or \u201cjust in case.\u201d Monitor symptoms of side effects like diarrhea, rashes, fatigue, or unusual pain. Can lead to: dysbiosis, candida overgrowth, clostridioides difficile, infection, leaky gut and weakened immunity. Mitochondrial damage (with some types). Fluoroquinolones (e.g., ciprofloxacin, levofloxacin) may impair mitochondrial function and cause tendinopathy, neuropathy, or fatigue. Can interact with anticoagulants, seizure meds, antacids, and others. Allergic reactions common for some types",
+    "conditions": "Life-saving for serious infections (sepsis, pneumonia, meningitis). Prevents complications from spreading infections (e.g., cellulitis progressing to abscess or sepsis). Used prophylactically before surgeries or in immune-suppressed patients (e.g., cancer, transplant). Common bacterial Infections. Strep throat (Group A Streptococcus). Bacterial pneumonia. UTIs. Sinusitis (if prolonged or purulent). Otitis media (middle ear infection). Cellulitis and skin infections. Lyme disease (Borrelia burgdorferi). Tuberculosis (TB). Meningitis. STIs"
+  },
+  {
+    "name": "Apple Cider Vinegar",
+    "benefits": "Claimed to support digestion, blood sugar regulation, and weight balance.",
+    "sources": "Raw ACV with \u201cmother\u201d (unfiltered sediment)",
+    "considerations": "Acidic\u2014can damage tooth enamel or irritate stomach lining. Dilute before drinking.",
+    "conditions": "Used for blood sugar spikes and sluggish digestion."
+  },
+  {
+    "name": "Arnica (Essential oil, folk remedy)",
+    "benefits": "Reduces pain, swelling, bruising, and inflammation when applied topically",
+    "sources": "Arnica montana flower; gels, creams, ointments",
+    "considerations": "Not for open wounds or internal use. Can irritate skin",
+    "conditions": "Bruising, sprains, muscle soreness, post-surgery swelling"
+  },
+  {
+    "name": "Ashwagandha  (adaptogen)",
+    "benefits": "Adaptogen: helps balance stress hormones (cortisol). May improve sleep, reduce anxiety. Supports thyroid and adrenal health. May enhance muscle strength and endurance",
+    "sources": "Not typically found in regular foods. Capsules, powders, teas, tinctures (KSM-66 and Sensoril are common standardized forms)",
+    "considerations": "May interact with thyroid medications. Can cause GI upset in some; start low. Avoid in hyperthyroidism unless monitored.",
+    "conditions": "Anxiety and stress. Insomnia. Adrenal fatigue. Hypothyroidism. PCOS. Depression"
+  },
+  {
+    "name": "Astaxanthin (Antioxidant)",
+    "benefits": "Powerful antioxidant (more potent than Vitamin C/E). Supports skin health (UV protection). Improves endurance and recovery in athletes. Anti-inflammatory and cardiovascular protective",
+    "sources": "Wild-caught salmon, krill, shrimp, red trout. Supplement: Capsules (often from microalgae Haematococcus pluvialis)",
+    "considerations": "Fat-soluble \u2014 take with food containing fat. May tint skin slightly orange at high doses. Safe for long-term use in moderate doses",
+    "conditions": "Eye health (macular degeneration). Joint inflammation. Cardiovascular disease. Skin aging. Mitochondrial dysfunction"
+  },
+  {
+    "name": "Vitamin A",
+    "benefits": "Supports vision, immune health, skin, reproduction. Crucial for epithelial tissue maintenance",
+    "sources": "Liver, cod liver oil, dairy, eggs. As a supplement: Retinyl palmitate or acetate",
+    "considerations": "Fat-soluble \u2014 can accumulate and cause toxicity. Avoid high doses during pregnancy. Retinol is more bioavailable than beta-carotene",
+    "conditions": "Night blindness. Skin disorders (acne, psoriasis). Immune dysfunction"
+  },
+  {
+    "name": "BCAAs (Branched-Chain Amino Acids: Leucine, Isoleucine, Valine)",
+    "benefits": "Supports muscle growth and repair. Reduces muscle breakdown during stress or illness. May reduce exercise fatigue. May support energy in mitochondrial dysfunction",
+    "sources": "Animal proteins (meat, dairy, eggs), whey protein. Powders or capsules",
+    "considerations": "May be less effective if not taken with full protein/amino acid profile. Use with caution in liver disease (may help, but monitor ammonia)",
+    "conditions": "Muscle wasting (cachexia, bed rest, chronic illness. Exercise recovery. Chronic fatigue. Liver cirrhosis (may reduce brain fog from hepatic encephalopathy)"
+  },
+  {
+    "name": "Berberine",
+    "benefits": "Supports blood sugar and insulin regulation. Aids metabolic function. Supports heart health - Lowers LDL cholesterol and triglycerides. Aids weight loss Is antimicrobial and supports gut health - Fights harmful bacteria, parasites, and Candida. May support brain function - Possible neuroprotective effects",
+    "sources": "bioactive compound found in several plants, including goldenseal, barberry, and Oregon grape. Supplement or capsule",
+    "considerations": "Should not be combined with other blood sugar-lowering drugs without monitoring. Comparable to metformin in glucose control. Best taken with meals to improve gut absorption",
+    "conditions": "Type 2 Diabetes and Insulin Resistance. High Cholesterol and Heart Disease. Gut Dysbiosis and SIBO. Weight Management. PCOS"
+  },
+  {
+    "name": "Beta-Alanine",
+    "benefits": "Buffers lactic acid buildup in muscles; may enhance exercise capacity and reduce fatigue",
+    "sources": "Produced in the body; supplements (capsules or powder)",
+    "considerations": "Common side effect is tingling (paresthesia), especially at higher doses. Best taken with food or split into smaller doses",
+    "conditions": "Muscle fatigue, endurance exercise, strength training"
+  },
+  {
+    "name": "Betaine (TMG) (coenzyme/enzyme, detox)",
+    "benefits": "Supports methylation and liver detox pathways. Helps regulate homocysteine levels",
+    "sources": "Beets, spinach, whole grains; trimethylglycine (TMG) supplements",
+    "considerations": "Often paired with B12, folate, and choline. May lower homocysteine but raise LDL in some",
+    "conditions": "Fatty liver, high homocysteine, mood disorders, methylation issues"
+  },
+  {
+    "name": "Bilberry",
+    "benefits": "Rich in anthocyanins (antioxidants that support eye health and circulation). May help improve night vision and reduce eye strain. Anti-inflammatory effects beneficial for heart health. Reduces oxidative stress. Supports blood sugar regulation",
+    "sources": "Capsules, extracts, dried fruit, tea",
+    "considerations": "May lower blood sugar, so diabetics should monitor levels carefully. Can thin the blood, so those on anticoagulants should consult a doctor",
+    "conditions": "Eye conditions (night blindness, macular degeneration, diabetic retinopathy). Poor circulation (chronic venous insufficiency). High blood sugar (diabetes). Inflammation-related disorders"
+  },
+  {
+    "name": "Blackstrap Molasses (food, mineral)",
+    "benefits": "Rich in iron, magnesium, calcium, and potassium; used to address deficiency or anemia",
+    "sources": "Syrup from sugarcane refining",
+    "considerations": "High in sugar; watch portion size",
+    "conditions": "Anemia, mineral deficiency, fatigue, brittle nails"
+  },
+  {
+    "name": "Boswellia Serrata Extract",
+    "benefits": "Anti-inflammatory; inhibits 5-LOX enzyme to reduce leukotriene production; supports joint health and inflammatory conditions",
+    "sources": "Resin from the Boswellia tree; typically standardized to 65% boswellic acids in capsules or powder",
+    "considerations": "Works synergistically with curcumin. Choose standardized extracts. May cause mild GI upset in some",
+    "conditions": "Osteoarthritis, rheumatoid arthritis, asthma, IBD, general inflammation"
+  },
+  {
+    "name": "Bromelain",
+    "benefits": "Anti-inflammatory. Powerful protein-digesting enzyme. Pain relief. Immune modulation. Digestive support. May aid wound healing. Thins mucus, reduces sinus inflammation. Anticoagulant",
+    "sources": "Pineapple. Powder, in enzyme blends",
+    "considerations": "Take with meals. Avoid with blood thinners. Do not take if allergic to pineapple, papaya, or latex. May increase some antibiotic absorption. High doses may cause nausea, diarrhea or cramping",
+    "conditions": "Arthritis. May help MCAS. Sinusitis. Fibromyalgia. Injury recovery"
+  },
+  {
+    "name": "B Vitamins (B1, B2, B3, B5, B6, B7, B8, B9, B12)",
+    "benefits": "Support metabolic processes and energy production. Helps with mood regulation and cognitive decline. Improves nerve regeneration and function",
+    "sources": "Whole grains, leafy greens, eggs, meat, fish, dairy, potatoes. Supplements, powders, capsules often multiple combined in one.",
+    "considerations": "Best taken with a meal for optimal absorption. Often available as Vitamin B Complex - with some mix of most of the main ones.",
+    "conditions": "Fatigue. Anxiety and depression, Cognitive decline. Anemia. Peripheral neuropathy. Panic attacks, and OCD. PCOS. Liver Health. Neurodevelopmental health. Pregnancy"
+  },
+  {
+    "name": "Cacao (Raw, Unprocessed Chocolate)",
+    "benefits": "Rich in antioxidants - Contains flavonoids that fight oxidative stress. Helps lower blood pressure and improve circulation. Increases serotonin, dopamine, and endorphins. Improves focus, memory, and neuroprotection. Anti-inflammatory effects - Supports overall wellness and reduces inflammation. Acts as a prebiotic, feeding beneficial gut bacteria. Supports relaxation, muscle function, and sleep",
+    "sources": "Raw cacao powder (Retains the most nutrients and antioxidants), Cacao nibs, Cacao butter, Dark chocolate (85%+ cocoa content), Cacao tea (shell infusion) - Mild antioxidant-rich tee",
+    "considerations": "Can be a stimulant - Theobromine may increase heart rate and cause jitteriness in sensitive individuals. May interfere with sleep - Best consumed earlier in the day. Can contribute to kidney stones in susceptible individuals. Cacao can be problematic for those with mast cell activation syndrome (MCAS). Can trigger migraines - Some people are sensitive to tyramine in cacao",
+    "conditions": "Depression and anxiety. Brain fog and cognitive decline. Chronic fatigue syndrome (ME/CFS) - Provides natural energy without caffeine. Heart disease and high blood pressure. Gut microbiome imbalances. Muscle cramps and tension"
+  },
+  {
+    "name": "Caffeine  (Nootropic)",
+    "benefits": "Stimulates the central nervous system, increasing alertness. Temporarily boosts energy and reduces fatigue. May enhance metabolism and exercise performance. Analgesic Enhancement and vasoconstrictive properties.",
+    "sources": "Coffee, tea, capsules, energy drinks, powder",
+    "considerations": "Can worsen anxiety, insomnia, or heart palpitations. May cause stomach irritation or acid reflux. Can lead to dependency\u2014taper off slowly if discontinuing. Excessive caffeine can lead to jitteriness, anxiety, insomnia, and an increased heart rate. It may also elevate blood pressure in sensitive individuals. Regular consumption can lead to dependence, and a sudden decrease in intake might trigger withdrawal symptoms such as headaches and irritability",
+    "conditions": "Fatigue (ME/CFS, fibromyalgia, long covid). Brain fog and cognitive dysfunction. Low blood pressure (postural orthostatic tachycardia syndrome - POTS). Migraine prevention (in small amounts)"
+  },
+  {
+    "name": "Calcium  (Electrolyte)",
+    "benefits": "Supports bone health, muscle function",
+    "sources": "Dairy, leafy greens, almonds",
+    "considerations": "Requires Vitamin D for absorption. Can interfere with iron and zinc absorption. Balance is key to avoid excess intake",
+    "conditions": "Muscle cramps. Hydration. Heart health. Blood pressure regulation"
+  },
+  {
+    "name": "Castor Oil (essential oil, folk remedy)",
+    "benefits": "Promotes lymphatic drainage and liver detox via topical packs. Relieves constipation",
+    "sources": "Cold-pressed castor oil for external use",
+    "considerations": "For external use only. Do not ingest. May stain fabrics",
+    "conditions": "Constipation (topical pack), menstrual cramps, lymphatic congestion"
+  },
+  {
+    "name": "CBD (Cannabidiol)",
+    "benefits": "Anti-inflammatory and pain-relieving properties. May help with anxiety and sleep disorders. Supports nervous system function. It also has neuroprotective properties",
+    "sources": "Oral: Oils, tinctures, capsules, gummies. Topical: Creams, balms, salves",
+    "considerations": "CBD is absorbed through the digestive tract (oral) or skin (topical). It interacts with the endocannabinoid system to regulate inflammation and neurotransmitter activity. May interact with medications (especially blood thinners). Oral CBD may cause drowsiness or digestive issues like diarrhea in high doses. Topical CBD is safer but may cause mild irritation in sensitive individuals. Best absorbed orally through sublingual use (under the tongue) or in a fat-based product to improve bioavailability",
+    "conditions": "Chronic pain (fibromyalgia, arthritis). Anxiety and depression. Sleep disorders (insomnia). Neurological conditions (epilepsy, multiple sclerosis). Inflammation-related disorders (IBD, autoimmune diseases)"
+  },
+  {
+    "name": "Celery Juice",
+    "benefits": "Promoted for digestion, bloating, and inflammation.",
+    "sources": "Fresh-blended juice (not store-bought blends)",
+    "considerations": "Mostly hype. Diuretic in some; can affect meds. No solid clinical backing.",
+    "conditions": "Used in wellness circles for IBS, skin, and general \u201creset.\u201d"
+  },
+  {
+    "name": "Chaga (Antioxidant)",
+    "benefits": "Immune system support. Anti-inflammatory. Antioxidant powerhouse. Supports gut. Liver detoxification. Blood sugar regulation - May improve insulin sensitivity. Heart health - Helps lower LDL (\"bad\") cholesterol and supports circulation. Potential anti-cancer properties",
+    "sources": "Tea, tincture, powder, capsules",
+    "considerations": "May lower blood sugar - Use caution if taking diabetes medications. Can interfere with blood clotting - Not recommended for those on blood thinners. Autoimmune conditions - Chaga can stimulate the immune system, so people with conditions like lupus or rheumatoid arthritis should consult a doctor. Kidney issues - Contains oxalates, which may contribute to kidney stones in high amounts",
+    "conditions": "Chronic fatigue syndrome (ME/CFS). Autoimmune conditions (use with caution). Diabetes and insulin resistance. Gut issues (IBS, leaky gut, IBD). Cancer support (adjunct therapy) - High in protective compounds. Cardiovascular disease"
+  },
+  {
+    "name": "Choline",
+    "benefits": "Supports liver function, brain development, and acetylcholine production (important for memory and muscle control)",
+    "sources": "Eggs, liver, soy, cruciferous vegetables, supplements (choline bitartrate, CDP-choline)",
+    "considerations": "High doses may cause fishy body odor, GI upset. Essential during pregnancy",
+    "conditions": "Cognitive decline, fatty liver, prenatal support, ADHD"
+  },
+  {
+    "name": "Chromium",
+    "benefits": "Blood sugar regulation. Improves insulin sensitivity. Weight management. Improved lipid profile. Support for muscle growth. Chromium may help lower LDL (\"bad\") cholesterol and triglycerides while raising HDL (\"good\") cholesterol. This can contribute to better cardiovascular health. Critical in the metabolism of fat, protein and carbs",
+    "sources": "Available in two main forms: chromium picolinate, which is often used as a supplement, and chromium chloride, which is the form found in food. Whole grains, meats (particularly liver), broccoli, grapes, potatoes, nuts (e.g., almonds, walnuts), mushrooms, eggs, spinach, beer (to a lesser extent)",
+    "considerations": "Small amounts in food. Excessive intake of chromium supplements can lead to toxicity, potentially affecting the liver and kidneys, and/or may cause gastrointestinal issues, including nausea, diarrhea, and abdominal discomfort. These side effects are typically associated with higher supplemental doses rather than food sources. Chromium can interact with certain medications, particularly those for diabetes, by enhancing the effect of insulin or lowering blood sugar levels too much. Potential risk of hypoglycemia in diabetics",
+    "conditions": "Type 2 diabetes. PCOS. Metabolic syndrome. High cholesterol and heart disease. Obesity. Metabolic health and inflammation"
+  },
+  {
+    "name": "Cinnamon Extract",
+    "benefits": "Supports healthy blood sugar regulation, insulin sensitivity, and metabolic function. Contains antioxidants that reduce oxidative stress and inflammation.",
+    "sources": "Ceylon (true cinnamon) or cassia bark extract; capsules or tinctures.",
+    "considerations": "Ceylon has lower coumarin content (safer for long-term use). High doses of cassia may stress the liver. Best taken with food. Can potentiate blood sugar-lowering medications.",
+    "conditions": "Type 2 diabetes, insulin resistance, metabolic syndrome, inflammation."
+  },
+  {
+    "name": "Cissus Quadrangularis",
+    "benefits": "Supports bone healing, joint integrity, ligament repair, and reduces inflammation; may support weight management and cortisol balance",
+    "sources": "Extracted from a vine used in Ayurveda; available in powdered, capsule, or tea form",
+    "considerations": "Look for standardized extracts (e.g., 2.5% ketosterones). Can cause GI discomfort in high doses",
+    "conditions": "Joint pain, bone fractures, muscle soreness, metabolic stress"
+  },
+  {
+    "name": "Citicoline (CDP-Choline)",
+    "benefits": "Supports brain energy, memory, focus, and synthesis of phospholipids for cell membranes; enhances dopamine receptor function",
+    "sources": "Synthesized compound available in powder, capsule, or liquid form",
+    "considerations": "Well-tolerated; works synergistically with phosphatidylserine and omega-3s. May slightly increase blood pressure",
+    "conditions": "Brain fog, cognitive fatigue, neurodegenerative diseases, ADHD"
+  },
+  {
+    "name": "Coenzyme Q10 (CoQ10)",
+    "benefits": "Supports mitochondrial energy production. Improves heart health, reduces oxidative stress",
+    "sources": "Fatty fish, organ meats, spinach, broccoli",
+    "considerations": "Ubiquinol (explained later) is more bioavailable, especially for older individuals. Take with a fat-containing meal. Can interact with statin medications (may be depleted by them)",
+    "conditions": "Heart disease. Migraines. Chronic fatigue. Neurodegenerative diseases. Fibromyalgia"
+  },
+  {
+    "name": "Collagen (Amino Acid)",
+    "benefits": "Skin health and anti-aging. Joint and cartilage support. Bone strength. Hair and nail growth. Gut health. Muscle recovery and performance. Wound healing",
+    "sources": "bone broth, fish skin and scales, chicken skin and cartilage, gelatin, egg whites",
+    "considerations": "Pair with Vitamin C to stimulate collagen synthesis. Avoid excess sugar and processed foods, they damage collagen by causing glycation. There's no plant-based collagen, but you can support collagen production with: Vitamin C, silica, zinc and copper",
+    "conditions": "Osteoarthritis and joint pain. Skin aging and wrinkles. Osteoporosis and bone health. Leaky gut and digestive issues. Hair loss. Post-surgery and injury recovery"
+  },
+  {
+    "name": "Comfrey (essential oil, folk remedy)",
+    "benefits": "Traditionally used for healing bones, sprains, and bruises topically",
+    "sources": "Salves, creams, poultices",
+    "considerations": "Not for internal use\u2014contains liver-toxic pyrrolizidine alkaloids",
+    "conditions": "Bone healing, bruising, soft tissue injuries, sprains"
+  },
+  {
+    "name": "Cordyceps",
+    "benefits": "Improves oxygen utilization and ATP production. Used traditionally to support stamina and immune function",
+    "sources": "Cordyceps sinensis or militaris (capsules, powders, teas)",
+    "considerations": "May affect blood sugar or immune modulation. Use standardized extracts for consistency",
+    "conditions": "Fatigue, athletic performance, libido, immune dysregulation"
+  },
+  {
+    "name": "Creatine (Monohydrate, HCL, Kre-Alkalyn) (Nootropic)",
+    "benefits": "Enhances ATP production and muscle strength. Improves cognitive function and energy levels",
+    "sources": "Red meat, fish. As a supplement powder",
+    "considerations": "Can be taken at any time of day; post-workout with carbs may enhance absorption. May slightly increase water retention and dehydration. Safe for kidneys in healthy individuals but should be monitored in those with kidney disease",
+    "conditions": "Muscle growth. Chronic fatigue. Cognitive decline. Neurodegenerative diseases"
+  },
+  {
+    "name": "Curcumin (Antioxidant)",
+    "benefits": "Polyphenol with anti-inflammatory, antioxidant, and immune-modulating properties. Neuroprotection. Supports cardiovascular health. May improve insulin sensitivity. Potential anti-cancer properties",
+    "sources": "Tumeric. Powders, capsules",
+    "considerations": "Poor natural bioavailability, take with black pepper (piperine) - increases absorption by ~2000%.\tGenerally safe, but high doses may cause GI upset or interact with medications. May interact with blood thinners, diabetes medications (enhances effect, Chemotherapy drugs (speak to oncologist first). High-dose supplements are not recommended during pregnancy without medical guidance",
+    "conditions": "Osteoarthritis & joint pain - as effective as NSAIDs in some trials. Rheumatoid arthritis. IBD (Crohn\u2019s, ulcerative colitis). Metabolic syndrome/Diabetes. Heart disease. Cognitive decline/Alzheimer\u2019s. Depression. Cancer (supportive - research ongoing"
+  },
+  {
+    "name": "Vitamin C (Ascorbic Acid)",
+    "benefits": "Boosts immunity, antioxidant, supports collagen production, immune function and skin health. Aids in collagen production and wound healing",
+    "sources": "Citrus fruits, bell peppers, strawberries, broccoli. Capsules, powders",
+    "considerations": "Enhances iron absorption. Large doses may cause stomach upset. Best taken with food for optimal absorption",
+    "conditions": "Immune support. Skin health. Cardiovascular health"
+  },
+  {
+    "name": "Dandelion Root",
+    "benefits": "Mild diuretic and liver detox aid. May support digestion and hormone regulation",
+    "sources": "Teas, tinctures, capsules, roasted for coffee alternatives",
+    "considerations": "Avoid with gallstones or diuretics. May cause allergic reaction in those sensitive to daisies or ragweed",
+    "conditions": "Water retention, sluggish digestion, mild acne or PMS"
+  },
+  {
+    "name": "D-Ribose",
+    "benefits": "Enhances ATP production and reduces fatigue. Supports heart function and energy levels",
+    "sources": "Mushrooms, organ meats (liver, heart), dairy products",
+    "conditions": "Heart health. Muscle Recovery. Fibromyalgia. CFS/ME"
+  },
+  {
+    "considerations": "Should be taken just before high-histamine meals. Not a long-term fix for MCAS. Unsuitable for vegans due to animal source. May not be halal/kosher",
+    "name": "Diamine Oxidase (DAO) (Enzyme)",
+    "benefits": "Helps break down dietary histamine, reducing histamine-related symptoms like headaches, flushing, or digestive distress",
+    "sources": "Extracted from porcine kidneys; available in capsule or tablet form, often with other histamine-lowering nutrients",
+    "conditions": "Histamine intolerance, MCAS, IBS, allergic conditions"
+  },
+  {
+    "name": "Vitamin D (D2: Ergocalciferol, D3: Cholecalciferol)",
+    "benefits": "Supports calcium absorption, essential for bone health, immune function, and mood regulation. Anti-inflammatory. Deficiency is linked to increased risk of depression",
+    "sources": "Sunlight, fatty fish, fortified dairy, eggs and cereals",
+    "considerations": "Requires fat for absorption. Works with calcium and magnesium. High doses can interfere with calcium balance and potentially cause kidney issues, especially when combined with other supplements affecting calcium",
+    "conditions": "Bone health. Immune function. Depression. Cardiovascular health"
+  },
+  {
+    "name": "Echinacea (Adaptogen) (Antioxidant)",
+    "benefits": "Respiratory infections. Wound healing and inflammation. Improves energy, enhances immune function, and increases stamina",
+    "sources": "Capsules, tinctures, tea, lozenges",
+    "considerations": "May not be suitable for autoimmune conditions (could overstimulate the immune system). Can cause allergic reactions in those sensitive to ragweed, chrysanthemums, marigolds, daisies",
+    "conditions": "Fatigue. Immune system support. Stress management"
+  },
+  {
+    "name": "Elderberry",
+    "benefits": "Rich in antioxidants (anthocyanins); may support immune response and reduce cold/flu symptoms",
+    "sources": "Syrups, capsules, gummies, teas (from berries or flowers)",
+    "considerations": "Raw berries can be toxic\u2014must be cooked. Not for autoimmune disease without professional guidance",
+    "conditions": "Viral infections, immune boost, cold prevention"
+  },
+  {
+    "name": "Vitamin E (Alpha-Tocopherol) (Antioxidant)",
+    "benefits": "Antioxidant. Supports skin and heart health. Cardiovascular health (protects against oxidative damage). Neurological protection. Immune function",
+    "sources": "Nuts, seeds, green leafy vegetables, barley, vegetable oils (like sunflower, wheat germ, rice bran and safflower oils)",
+    "considerations": "Fat-soluble. High doses may thin blood",
+    "conditions": "Dermatological conditions. Neurological and cognitive disorders. Cardiovascular health. Support in high-oxidative-stress states"
+  },
+  {
+    "name": "Fiber",
+    "benefits": "Improves digestive health. Blood sugar regulation. Cardiovascular health. Gut health. Weight management and reduces cholesterol levels",
+    "sources": "Fruits, vegetables, whole grains, legumes, and nuts. Soluble (psyllium, inulin) and insoluble (wheat bran, cellulose)",
+    "considerations": "Soluble fiber dissolves in water and forms a gel, slowing digestion. Insoluble fiber adds bulk to stool and promotes movement through the intestines. Fiber isn't absorbed by the body but is essential for digestive function and gut health. Adequate water intake is crucial when increasing fiber to prevent digestive issues like bloating or constipation",
+    "conditions": "Digestive issues (IBS, constipation, diverticulitis). High cholesterol. Blood sugar regulation (diabetes, metabolic syndrome). Gut dysbiosis"
+  },
+  {
+    "name": "Fenugreek",
+    "benefits": "Supports blood sugar regulation, digestion, and may enhance milk production during lactation",
+    "sources": "Seeds (capsules, teas, powders)",
+    "considerations": "May affect thyroid or blood sugar medications. Causes maple-like body odor in some users",
+    "conditions": "Diabetes, digestive sluggishness, breastfeeding support"
+  },
+  {
+    "name": "GABA (Gamma-Aminobutyric Acid) (Neurotransmitter)",
+    "benefits": "Primary calming neurotransmitter; reduces excitability in the nervous system; promotes relaxation, sleep, and anxiety relief",
+    "sources": "Available as powder or capsules; also found in fermented foods (small amounts)",
+    "considerations": "Oral GABA may not cross the blood\u2013brain barrier well; best used in liposomal, pharmaGABA, or high-dose forms",
+    "conditions": "Anxiety, insomnia, overstimulation, stress-related disorders"
+  },
+  {
+    "name": "Ginger (Zingiber officinale)",
+    "benefits": "Anti-inflammatory, anti-nausea, digestive support, blood sugar modulation, circulation enhancer",
+    "sources": "Root powder, extract, capsules, or fresh juice",
+    "considerations": "Can thin blood slightly; may interact with anticoagulants. Best taken with food",
+    "conditions": "Nausea, arthritis, muscle pain, indigestion"
+  },
+  {
+    "name": "Ginkgo Biloba",
+    "benefits": "Improves blood flow and oxygenation to the brain; enhances memory and cognitive function; antioxidant activity",
+    "sources": "Leaf extract, standardized to 24% flavone glycosides and 6% terpene lactones",
+    "considerations": "May interact with blood thinners; avoid pre-surgery. Start low, go slow",
+    "conditions": "Cognitive decline, brain fog, tinnitus, poor circulation"
+  },
+  {
+    "name": "Ginseng (Panax ginseng) (Adaptogen) (Nootropic)",
+    "benefits": "Improves physical endurance, boosts energy, and supports cognitive function. Supports immune function. Helps with stress and fatigue",
+    "sources": "Ginseng root, tea, and supplements",
+    "considerations": "Can be stimulating - take early in the day",
+    "conditions": "Fatigue and Chronic Fatigue Syndrome. Brain Fog and Cognitive Decline. Stress and Adrenal Support. Immune System Weakness"
+  },
+  {
+    "name": "Glucomannan",
+    "benefits": "Soluble fiber that promotes fullness, supports blood sugar balance, and relieves constipation",
+    "sources": "Derived from konjac root; found in capsules, powders, or shirataki noodles",
+    "considerations": "Take with plenty of water to prevent choking. Can interfere with absorption of some medications",
+    "conditions": "Constipation, appetite control, weight management"
+  },
+  {
+    "name": "Glutamine (amino acid)",
+    "benefits": "Supports gut health, gut lining and intestinal healing. Aids in muscle recovery and immune function",
+    "sources": "Powder, capsules",
+    "considerations": "Can raise ammonia levels in those with liver or kidney disease. Should be taken with food for better absorption",
+    "conditions": "Gut issues (leaky gut, IBS, IBD). Muscle recovery (after workouts, chronic illness muscle wasting). Immune function support. Healing after surgery or injury"
+  },
+  {
+    "name": "Glutathione (Antioxidant)",
+    "benefits": "A powerful antioxidant that helps detoxify the liver, supports immune function, and protects cells from oxidative stress. Supports mitochondrial function",
+    "sources": "NAC is a precursor of glutathione. Found in foods like spinach, avocado, and asparagus. Available as an IV also. Glycine promotes glutathione production",
+    "considerations": "Oral glutathione has low bioavailability due to digestive breakdown; liposomal forms can improve absorption. Taking it with a fat source or in liposomal form increases absorption. High doses may lead to side effects like stomach upset. May cause detox symptoms (headache, fatigue)",
+    "conditions": "Neurological diseases (Parkinson\u2019s, Alzheimer\u2019s). Autoimmune conditions. Mitochondrial dysfunction. Chronic fatigue syndrome (ME/CFS). Detoxification (heavy metals, mold exposure)"
+  },
+  {
+    "name": "Glycine (Amino Acid) (Detox)",
+    "benefits": "Non-essential amino acid (body can produce it, but supplemental amounts can be beneficial). Vital in collagen synthesis, neurotransmission, detoxification, and cellular repair. Improves sleep quality. Supports joint and skin health. Liver support: Promotes glutathione production and phase II detox. Neuroprotective. Blood sugar regulation. Anti-inflammatory. Cognitive support",
+    "sources": "Gelatin and collagen-rich foods: bone broth, skin, tendons., animal protein (especially pork, chicken skin). Powder, capsules, or as part of collagen blends",
+    "considerations": "May lower blood pressure or blood sugar: Use caution if taking related medications. Too much may cause nausea or GI discomfort. Discuss with a doctor before using high doses, especially for those with renal insufficiency",
+    "conditions": "Insomnia or poor sleep quality. Joint pain or osteoarthritis. Leaky gut or digestive repair. Fatty liver, NAFLD. Type 2 diabetes or insulin resistance. Anxiety and neurological disorders. Detox overload or low glutathione levels. Cognitive impairment, ADHD"
+  },
+  {
+    "name": "Green Tea Extract (Epigallocatechin gallate - EGCG) (Antioxidant)",
+    "benefits": "Antioxidant, anti-inflammatory, supports fat metabolism, cognitive protection, and liver health",
+    "sources": "Extracted from Camellia sinensis leaves; standardized for EGCG content",
+    "considerations": "Take with food to avoid stomach upset; can be stimulating due to caffeine content",
+    "conditions": "Obesity, cardiovascular health, cancer prevention, cognitive aging"
+  },
+  {
+    "name": "Hawthorn Berry",
+    "benefits": "Improves blood flow, strengthens heart muscle, and reduces anxiety. Traditionally used for cardiovascular health",
+    "sources": "Berries, leaves, and flowers in teas, tinctures, and capsules",
+    "considerations": "May interact with blood pressure or heart medications. Effects are gentle but cumulative",
+    "conditions": "Mild heart conditions, high blood pressure, anxiety"
+  },
+  {
+    "name": "Hesperidin",
+    "benefits": "Citrus bioflavonoid; supports blood vessel integrity, reduces inflammation, enhances vitamin C absorption",
+    "sources": "Derived from citrus peels; available in powder or capsule form",
+    "considerations": "Often combined with other flavonoids; best taken with food. Mild anticoagulant effects",
+    "conditions": "Chronic venous insufficiency, hemorrhoids, cardiovascular support, inflammation"
+  },
+  {
+    "name": "Histidine (EAA)",
+    "benefits": "Supports histamine production, brain function, and wound healing. Is essential for immune function, gut health, and neurotransmitter production (converts into histamine)",
+    "sources": "Fish, meat, eggs, dairy, legumes, whole grains",
+    "considerations": "Water-soluble. Caution/supervision is advised for those with excessive levels of iron or copper, mast cell disorders or mastocytosis, gastrointestinal issues, kidney or liver dysfunction, allergic conditions or autoimmune disease, histamine sensitivity or intolerance. It can be taken with or without food, though taking it with a protein-rich meal may help reduce any chance of histamine-like reactions in sensitive individuals",
+    "conditions": "Cognitive function. Anemia and fatigue. Joint and muscle recovery. Metabolic detoxification"
+  },
+  {
+    "name": "Holy Basil (Tulsi) (Adaptogen)",
+    "benefits": "Known for its ability to reduce stress, balance blood sugar, and support the immune system. Anti-inflammatory",
+    "sources": "Leaves of the Tulsi plant, tea, tinctures, capsules",
+    "considerations": "Immune-modulating \u2014 may either calm or stimulate immune activity, people with autoimmune conditions should be cautious, starting low and monitoring carefully. It can lower blood sugar. Those with hyperthyroidism should be cautious. It may benefit hypothyroid individuals in some cases. May affect clotting, thin blood and lower blood pressure. Avoid if attempting to conceive",
+    "conditions": "Stress, anxiety, metabolic disorders, and immune deficiencies"
+  },
+  {
+    "name": "Hyaluronic Acid",
+    "benefits": "Promotes joint lubrication, skin hydration, and tissue healing; draws moisture to connective tissues",
+    "sources": "Produced via bacterial fermentation; available in powder and capsules",
+    "considerations": "Choose high-molecular weight for joints, low for skin (though inflammation risk exists at very low weights); low-molecular weight may increase absorption but can be pro-inflammatory in high doses",
+    "conditions": "Joint pain, osteoarthritis, dry skin, wound healing"
+  },
+  {
+    "name": "Hydrogen Water (Antioxidant)",
+    "benefits": "Delivers molecular hydrogen, a potential antioxidant; may reduce inflammation and fatigue",
+    "sources": "Canned hydrogen water, tablets that dissolve in water",
+    "considerations": "Limited evidence. Drink soon after opening for potency",
+    "conditions": "Oxidative stress, exercise recovery, fatigue, mitochondrial dysfunction"
+  },
+  {
+    "name": "Inositol",
+    "benefits": "Supports insulin sensitivity and ovarian health. Also modulates serotonin and GABA\u2014used for mood and anxiety",
+    "sources": "Found in fruits and grains; available as myo-inositol and D-chiro-inositol powders or capsules",
+    "considerations": "High doses may cause GI upset. May interact with psychiatric meds. Best taken with food",
+    "conditions": "PCOS, anxiety, OCD, insulin resistance"
+  },
+  {
+    "name": "Iodine",
+    "benefits": "Essential for thyroid hormone production. Supports metabolism and brain function",
+    "sources": "Iodized salt, seaweed, potassium iodide supplements, dairy products",
+    "considerations": "Highly bio-available from food and supplements, take with food. Excess iodine can cause thyroid dysfunction. Avoid high doses unless prescribed. Take with selenium",
+    "conditions": "Thyroid disorders (hypothyroidism, Hashimoto\u2019s. Hormonal imbalances. Cognitive function (brain fog, mental clarity)"
+  },
+  {
+    "name": "Iron",
+    "benefits": "Essential for red blood cell production",
+    "sources": "Red meat, beans, spinach. Powders, capsules",
+    "considerations": "Enhanced by Vitamin C, inhibited by calcium. Excess can be toxic",
+    "conditions": "Anemia and fatigue (essential for red blood cell production). Cognitive function and mental clarity. Immune system function. Restless leg syndrome (linked to low iron levels). Also beneficial for Pregnancy and fetal development. Plays a supportive role in menstruation"
+  },
+  {
+    "name": "Kava Kava",
+    "benefits": "Potent relaxant and anti-anxiety remedy; promotes calm and sociability",
+    "sources": "Root-based teas, tinctures, capsules",
+    "considerations": "Can affect liver function\u2014avoid long-term or with alcohol. Not legal in all countries",
+    "conditions": "Anxiety, insomnia, social tension"
+  },
+  {
+    "name": "Kombucha",
+    "benefits": "Contains probiotics, may aid digestion and gut flora.",
+    "sources": "Fermented tea drinks (check sugar content).",
+    "considerations": "Not for histamine-sensitive individuals. Can cause bloating.",
+    "conditions": "Mild digestive support (if tolerated)."
+  },
+  {
+    "name": "Vitamin K (K1, K2)",
+    "benefits": "Supports blood clotting, bone health",
+    "sources": "Leafy greens, fermented foods, supplements",
+    "considerations": "Fat-soluble. Can interfere with blood thinners",
+    "conditions": "Bone health (supports calcium absorption into bones). Cardiovascular health (helps prevent arterial calcification). Blood clotting (essential for coagulation and wound healing). Brain function and neuroprotection"
+  },
+  {
+    "name": "L-Arginine (Amino Acid)",
+    "benefits": "Necessary for making proteins and beneficial for circulation in the body. Stimulates release of growth hormone, insulin and other substances in the body. Wound healing and immune function. Exercise Tolerance or Recovery (limited evidence in fatigue syndromes)",
+    "sources": "Red meat, poultry, fish and dairy. Also in supplement form",
+    "considerations": "L-Citrulline: Converts to arginine in the body, often better absorbed and longer-lasting. L-Ornithine: Sometimes stacked with arginine for liver detox or athletic support. Caution advised for those with herpes, hypotension, kidney or liver dysfunction, asthma/respiratory issues, sepsis, or cancer (Some tumors may use arginine to promote growth, though this depends on tumor type and context)",
+    "conditions": "Chest pain. Cardiovascular health (supports nitric oxide production for vasodilation). Erectile dysfunction (improves blood flow). Athletic performance and muscle recovery. Blood pressure regulation (may lower high blood pressure)"
+  },
+  {
+    "name": "L-Carnitine",
+    "benefits": "Facilitates fatty acid transport into mitochondria; may support energy metabolism and heart health",
+    "sources": "Red meat, fish; L-carnitine tartrate or acetyl-L-carnitine supplements",
+    "considerations": "May cause mild GI upset or a fishy odor. May interact with thyroid meds or anticoagulants",
+    "conditions": "Fatigue, heart disease, male fertility"
+  },
+  {
+    "name": "L-Ornithine",
+    "benefits": "Supports ammonia detoxification through the urea cycle; may reduce fatigue, improve sleep quality, and enhance physical recovery. Often used for liver support and performance endurance",
+    "sources": "Non-protein amino acid synthesized in the body and found in small amounts in meat and dairy; available in powder or capsule form as L-ornithine or L-ornithine HCl",
+    "considerations": "Best taken on an empty stomach for absorption. Often combined with L-arginine or L-citrulline. High doses may cause mild GI discomfort",
+    "conditions": "Fatigue, liver dysfunction, poor detox capacity, post-exercise recovery, hyperammonemia"
+  },
+  {
+    "name": "L-Tyrosine (Amino acid)",
+    "benefits": "Precursor to dopamine, norepinephrine, and thyroid hormones; supports alertness, motivation, and stress resilience",
+    "sources": "Isolated amino acid, available in pure powder or capsules",
+    "considerations": "Take away from protein-rich meals; may interact with thyroid meds or MAOIs",
+    "conditions": "Brain fog, stress, fatigue, low mood"
+  },
+  {
+    "name": "Lemon Balm",
+    "benefits": "Anti-anxiety. Antiviral (used against herpes). Digestive aid. Cognitive support. Menstrual relief",
+    "sources": "Tea, tinctures, capsules, topical, essential oil",
+    "considerations": "Take with valerian or passionflower for enhanced sedative effect/sleep support. Pair with peppermint or chamomile for calming digestion. Those with hypothyroidism or Hashimoto's should use caution and monitor symptoms. Can increase drowsiness and brain fog in fatigue syndromes. May enhance effects of sedative medication. Can lower blood pressure. It has antiviral activity, particularly against herpes viruses (HSV-1/HSV-2). May be beneficial for flare prevention. Immune-modulating effects are mild and variable\u2014worth monitoring in autoimmune cases",
+    "conditions": "Anxiety and stress reduction. Insomnia and sleep quality. Herpes labialis (cold sores) - topically. Digestive issues. May benefit dementia /Alzheimer's. Menstrual and premenstrual symptoms"
+  },
+  {
+    "name": "Lion's Mane (Adaptogen) (Nootropic)",
+    "benefits": "Neuroprotection. cognitive function. Mood regulation",
+    "sources": "Lion's mane mushroom. Dried as teas/supplements",
+    "considerations": "Combining it with other supplements affecting cognition or the nervous system (e.g., nootropics) may have synergistic effects. Caution for those on medication for mood disorders/neurological conditions",
+    "conditions": "Depression and anxiety. Cognitive decline. Neuropathy. Gut health. Immune function"
+  },
+  {
+    "name": "Lithium Orotate (nootropic, mineral)",
+    "benefits": "Neuroprotective at low doses; mood stabilizer; may reduce impulsivity and anxiety",
+    "sources": "Mineral salt form of lithium in capsule/tablet",
+    "considerations": "Not the same as prescription lithium carbonate. Safe at microdose levels (\u22645 mg)",
+    "conditions": "Bipolar tendencies (adjunct only), irritability, suicidal ideation, OCD, anxiety"
+  },
+  {
+    "name": "Luteolin (Antioxidant)",
+    "benefits": "Potent flavonoid with antioxidant, anti-inflammatory, and mast cell-stabilizing properties; modulates immune response, reduces neuroinflammation, and may support mitochondrial health",
+    "sources": "Found in celery, parsley, thyme, chamomile, green peppers; available as an isolated extract in powder or capsule form",
+    "considerations": "Often paired with quercetin or rutin for synergistic mast cell support; low bioavailability\u2014best taken with fat and/or piperine. May cause mild GI upset in sensitive individuals",
+    "conditions": "MCAS, histamine intolerance, neuroinflammation, allergies, autoimmune flares, cognitive dysfunction"
+  },
+  {
+    "name": "Lysine (EAA)",
+    "benefits": "Supports collagen production, immune function, and calcium absorption. Lysine is an essential amino acid needed for protein synthesis, immune support, and neurotransmitter function. It plays a key role in preventing viral infections and promoting tissue repair. Supports mental health and mood",
+    "sources": "Fish, meat, eggs, dairy. Vegan: tofu, quinoa, lentils, pumpkin seeds, black beans",
+    "considerations": "Best absorbed with Vitamin C (supports collagen production). High doses may cause digestive upset. May interact with calcium metabolism\u2014monitor intake if taking calcium supplements",
+    "conditions": "Herpes and cold sores. Osteoporosis. Anxiety and stress. Supports serotonin production. Wound healing and skin health"
+  },
+  {
+    "name": "Magnesium (Various Forms)",
+    "benefits": "Supports muscle and nerve function, heart health, and is crucial for over 300 biochemical processes in the body. It can promote relaxation and improve sleep quality. Energy production. Prevents cramps, spasms and tremors. Blood sugar regulation. Anti-inflammatory",
+    "considerations": "Excessive magnesium may cause digestive issues. Can interact with certain medications like antibiotics and diuretics. Works well with Vitamin D and calcium. Despite its importance, many people have a deficiency due to poor diet, stress, or medical conditions. Vitamin D enhances magnesium absorption. A deficiency in Vitamin D can lead to poor magnesium levels. Vitamin B6 helps transport magnesium into cells. Protein helps the body absorb and retain magnesium. Large amounts can compete with magnesium for absorption. Alcohol and caffeine increase magnesium excretion through urine. Diuretics: Can deplete magnesium levels. Antacids and Proton Pump Inhibitors (PPIs): Reduce magnesium absorption over time. Certain antibiotics can interfere with magnesium levels. Blood pressure medications may be affected by magnesium levels",
+    "sources": "Nuts and seeds, leafy greens, legumes, whole grains, fruits, seafood, dark chocolate",
+    "conditions": "Insomnia. Muscle cramps. Migraines. Heart disease. High blood pressure"
+  },
+  {
+    "name": "Manganese (Antioxidant?)",
+    "benefits": "Supports metabolism. Bone health (supports collagen formation and bone density). Joint and cartilage repair. Antioxidant support. Brain health and neurotransmitter function",
+    "sources": "Nuts, whole grains, tea",
+    "considerations": "Excess calcium and iron may inhibit absorption. High doses may be toxic",
+    "conditions": "Arthritis. Post-Surgery and injury recovery. Brain fog. Cognitive decline"
+  },
+  {
+    "name": "Marjoram",
+    "benefits": "Relaxes muscles and eases spasms (antispasmodic). Calms the nervous system and supports restful sleep. May reduce inflammation and relieve joint or menstrual pain. Mild digestive aid for bloating or gas.",
+    "sources": "Fresh or dried herb (used in teas or cooking). Essential oil (steam-distilled from leaves and flowers). Capsules and tinctures also available.",
+    "considerations": "Essential oil must be diluted before topical use. Avoid during pregnancy unless advised by a professional (especially oil). Can cause drowsiness. Use with caution if already taking sedatives or muscle relaxants.",
+    "conditions": "Muscle spasms and cramps. Menstrual pain. Anxiety and insomnia. Digestive discomfort. Joint pain and stiffness."
+  },
+  {
+    "name": "Melatonin (Antioxidant)",
+    "benefits": "Regulate sleep-wake cycles. It is often used as a supplement to treat insomnia or jet lag. Sleep regulation - helps improve sleep onset and quality, particularly for those with sleep disorders or disrupted sleep cycles. Antioxidant. May support immune function and protect cells from oxidative damage",
+    "sources": "Tart cherries, goji berries, grapes (especially red/purple), mushrooms, bananas, pistachios, oats. Supplements more commonly taken",
+    "considerations": "Melatonin can interact with medications that affect the central nervous system (e.g., sedatives, anticonvulsants, or certain antidepressants). Causes drowsiness - should not be combined with sedatives, alcohol, or drugs. Melatonin in prescription form is typically vegetarian but not always vegan, depending on the source",
+    "conditions": "Insomnia and sleep disorders (regulates circadian rhythm). Jet lag and shift work sleep issues. Migraines and cluster headaches. Immune system support (may help with autoimmune conditions. Neurological conditions (potential benefits for Alzheimer\u2019s and Parkinson\u2019s)"
+  },
+  {
+    "name": "Metformin",
+    "benefits": "Regulates blood sugar by increasing insulin sensitivity.  Reduces inflammation and oxidative stress. May support mitochondrial function",
+    "sources": "Tablets (immediate and extended-release), liquid",
+    "considerations": "Primarily a medication, but used off-label for various conditions. It reduces glucose production in the liver and increases glucose uptake in muscles. Can cause gastrointestinal distress (nausea, diarrhea). May lead to B12 deficiency over long-term use\u2014consider supplementation. Avoid if kidney function is impaired",
+    "conditions": "Type 2 diabetes. Insulin resistance (PCOS, metabolic syndrome). Mitochondrial dysfunction (ME/CFS, Long COVID). Anti-aging and longevity research"
+  },
+  {
+    "name": "Methionine (EAA)",
+    "benefits": "Helps with detoxification, liver health, and antioxidant production (glutathione), the formation of cysteine and taurine and is involved in methylation processes (important for DNA function). Supports mood and brain function. Anti-inflammatory",
+    "sources": "Meat, fish, eggs, dairy. Vegan sources: brazil nuts, sunflower seeds, soybeans, spirulina",
+    "considerations": "Best absorbed with B vitamins (B6, B12, folate) and magnesium\u2014supports methylation. Excess methionine can raise homocysteine levels, increasing the risk of heart disease. Pair with antioxidants (Vitamin C and E) to prevent homocysteine buildup. Excess methionine can raise homocysteine levels, increasing the risk of heart disease. May worsen oxidative stress in some individuals if not balanced with antioxidants",
+    "conditions": "Liver disease and detox support. Hair, skin and nail health. Mood disorders. Joint health (Arthritis, Osteoarthritis) - SAMe reduces inflammation and pain"
+  },
+  {
+    "name": "Methylsulfonylmethane (MSM)",
+    "benefits": "Reduces joint pain, muscle soreness, inflammation; supports collagen formation and detoxification",
+    "sources": "Organosulfur compound found in plants; produced synthetically for supplements",
+    "considerations": "Start with small doses (1 g) to assess tolerance; sulfur taste/odor is normal",
+    "conditions": "Joint pain, arthritis, exercise recovery, hair/skin/nail health"
+  },
+  {
+    "name": "Milk thistle (Silybum marianum/silymarin)",
+    "benefits": "Liver detoxification funtion and regeneration. Protects against toxins and alcohol damage. Supports blood sugar regulation. Skin health. Possibly neuroprotective",
+    "sources": "Capsules, extracts, or tea",
+    "considerations": "Best taken with fat-containing meals for absorption. Micronized extracts improve uptake. Some drug interactions. May cause GI upset. Can worsen obstructive cholestasis/gallstones",
+    "conditions": "Fatty liver disease (NAFLD). Liver Detox and Alcohol Recovery. Acne and Skin Conditions. Blood Sugar Regulation. PCOS and Hormonal Balance. Metabolic Syndrome"
+  },
+  {
+    "name": "Moringa",
+    "benefits": "Nutrient-dense plant rich in antioxidants, iron, and amino acids; supports detox and energy",
+    "sources": "Leaf powders, teas, capsules",
+    "considerations": "Can lower blood sugar. Use cautiously with hypotension or diabetes meds",
+    "conditions": "Nutritional deficiency, inflammation, metabolic health"
+  },
+  {
+    "name": "N-Acetyl Cysteine (NAC) (Antioxidant) (Detox)",
+    "benefits": "Glutathione precursor. Antioxidant. Detoxification. Lung health. Mental health. Immune System Support: Helps fight infections and inflammation",
+    "sources": "Eggs, poultry, garlic, onions (as cysteine - its precursor). Powders, capsules (as NAC)",
+    "considerations": "Best absorbed on an empty stomach and taken with Vitamin C for enhanced glutathione production. Can thin blood, so caution with anticoagulant medications. May lower blood pressure when combined with antihypertensive drugs. Helps process toxins, including acetaminophen and alcohol",
+    "conditions": "Liver detox and respiratory health. Mental health: OCD, depression, and addiction. Oxidative stress. Long Covid, CFS/ME, Fibromyalgia"
+  },
+  {
+    "name": "Nettle Leaf",
+    "benefits": "Anti-inflammatory and mildly diuretic; supports urinary health and reduces seasonal allergies",
+    "sources": "Teas, tinctures, capsules",
+    "considerations": "Can interact with diuretics or blood pressure meds. Stinging form must be dried or cooked",
+    "conditions": "Allergies, joint pain, water retention"
+  },
+  {
+    "name": "Nicotinamide Riboside (NR)",
+    "benefits": "NAD+ precursor. Energy production and mitochondrial function - increases ATP production. DNA repair. Anti-aging effects. Neuroprotection: Improves brain function and has protective effects on nerve cells. Metabolic support",
+    "sources": "Milk, yeast, and certain vegetables. Supplements: Available in powder or capsule form",
+    "considerations": "Best absorbed with a meal. Some may experience mild digestive upset or skin flushing, especially at higher doses initially. May interact with certain medications (e.g., chemotherapy drugs or immunosuppressants). Safety during pregnancy and breastfeeding hasn't been well studied. NAD+ levels can take time to build up, so be patient with results (typically a few weeks)",
+    "conditions": "CFS/ME and fatigue. Neurodegenerative diseases. Type 2 Diabetes and Insulin Resistance. Aging-related conditions. Obesity. Metabolic syndrome"
+  },
+  {
+    "name": "Nicotinamide Mononucleotide (NMN)",
+    "benefits": "Another NAD+ precursor. Energy production and mitochondrial function - increases ATP production. Anti-aging effects. Neuroprotection: Improves brain function and has protective effects on nerve cells. Metabolic support. Cardiovascular Health",
+    "sources": "Edamame, broccoli, cucumbers, and avocados. Supplements: Available in powder or capsule form",
+    "considerations": "Take with food - fat-soluble. May cause mild gastrointestinal discomfort (e.g., bloating or nausea) and headaches. May interact with certain medications, particularly those related to metabolism or inflammation. Those with active cancer, or with autoimmune flares need to be cautious. Safety during pregnancy and breastfeeding hasn't been well studied. NAD+ levels can take time to build up, so be patient with results (typically a few weeks). Stack with resveratrol or pterostilbene - synergistically activates sirtuins, with TMG (Trimethylglycine) - helps balance methylation processes, with CoQ10/Ubiquinol - further supports mitochondrial energy production",
+    "conditions": "CFS/ME and fatigue. Fibromyalgia. Long covid. Neurodegenerative diseases. Type 2 Diabetes and Insulin Resistance. Aging-related conditions. Cardiovacular disease. Metabolic syndrome"
+  },
+  {
+    "name": "Omega-3 Fatty Acids (EPA, DHA) (Nootropic)",
+    "benefits": "Lowers triglycerides and supports blood vessel function. Brain Function: Essential for memory, cognition, and mood regulation. Anti-Inflammatory and general inflammation. Eye and joint health",
+    "sources": "Fatty fish (salmon, sardines, mackerel), Flaxseeds, chia seeds (contain ALA, which converts to EPA/DHA), Walnuts, Algal oil (plant-based omega-3). Cod Liver Oil",
+    "considerations": "Best taken with food, preferably containing fat, to improve absorption. May thin blood, caution if taking anticoagulants. High doses may cause digestive issues. Fish-based sources provide direct EPA and DHA, whereas plant sources contain ALA (which converts inefficiently). Higher DHA is recommended for brain health; higher EPA for inflammation",
+    "conditions": "Cardiovascular health. Brain health. Arthritis. Depression. Inflammation. Auto-immune conditions"
+  },
+  {
+    "name": "Oregano",
+    "benefits": "Antimicrobial and antifungal properties. Supports gut and immune health",
+    "sources": "Oil, fresh or dried herb, capsules",
+    "considerations": "Highly bioavailable. Compounds like carvacrol and thymol are metabolized in the liver and act as antimicrobial agents. Oil is potent\u2014must be diluted before use. Can cause stomach irritation in large doses. May interact with certain medications",
+    "conditions": "Bacterial and fungal infections (candida, SIBO). Immune support. Gut health and dysbiosis. Respiratory conditions"
+  },
+  {
+    "name": "Palmitoylethanolamide (PEA)",
+    "benefits": "Natural anti-inflammatory and pain modulator. Reduces nerve pain, inflammation, and neuroinflammation",
+    "sources": "Eggs, soy, peanuts (in small amounts); taken as isolated supplement",
+    "considerations": "Well tolerated. Start low and increase gradually. Often combined with luteolin for MCAS support",
+    "conditions": "Chronic pain, fibromyalgia, ME/CFS, neuropathy, MCAS, long COVID"
+  },
+  {
+    "name": "Phenylalanine (EAA)",
+    "benefits": "Boosts mood, precursor to dopamine, norepinephrine, and epinephrine - helps with motivation, focus, and mental clarity. Supports thyroid function. Reduces chronic pain - helps regulate natural painkillers (endorphins and enkephalins). Supports cognitive function and alertness",
+    "sources": "Meat, fish, eggs, dairy. Vegan sources: almonds, soybeans, pumpkin seeds, lentils",
+    "considerations": "Best absorbed with Vitamin B6 and iron (helps convert it into dopamine). Avoid excess protein with supplementation\u2014too much can compete with absorption. Not safe for individuals with PKU (Phenylketonuria), a genetic condition. High doses may cause anxiety, jitteriness, or insomnia",
+    "conditions": "Depression, ADHD, and brain fog. Chronic pain (fibromyalgia, arthritis). Thyroid Disorders (Hypothyroidism)"
+  },
+  {
+    "name": "Phosphatidylserine",
+    "benefits": "Key phospholipid for brain cell membranes; supports memory, cognition, and stress hormone balance",
+    "sources": "Derived from soy or sunflower lecithin; available in powder or capsules",
+    "considerations": "Best taken with food/fat for absorption; may reduce cortisol if taken before bed",
+    "conditions": "Cognitive decline, ADHD, memory issues, chronic stress"
+  },
+  {
+    "name": "Piperine (Black Pepper Extract)",
+    "benefits": "Enhances bioavailability of curcumin, quercetin, and other nutrients; mild digestive stimulant",
+    "sources": "Extracted from black pepper; standardized to 95% piperine",
+    "considerations": "Use small doses (5\u201310 mg); too much may irritate GI tract",
+    "conditions": "Poor nutrient absorption, inflammation, digestive sluggishness"
+  },
+  {
+    "name": "Pomegranate Extract",
+    "benefits": "Antioxidant-rich (punicalagins and anthocyanins). Reduces inflammation and oxidative stress. Supports cardiovascular health, skin regeneration, and hormone modulation.",
+    "sources": "Juice concentrate, capsules, powders standardized to punicalagins.",
+    "considerations": "May interact with blood pressure or statin medications. Juice is high in sugar\u2014extracts preferred for concentrated effects.",
+    "conditions": "Cardiovascular disease, oxidative stress, skin aging, inflammation, hormone balance (esp. post-menopausal)."
+  },
+  {
+    "name": "Potassium (Electrolyte)",
+    "benefits": "Electrolyte balance. Muscle and nerve function. Can help with jitters or muscle spasms, and mitigating cramps, weakness, and fatigue. Heart health. Blood pressure regulation",
+    "sources": "Fruits, spinach, potatoes, tomatoes, sweet potatoes, legumes, fish, dairy, whole grains. Powders, capsules. It is commonly administered in oral form (potassium chloride) or through IV infusions in a hospital setting, or in pre-mixed electrolyte supplements",
+    "considerations": "Excessive potassium can lead to hyperkalemia, a potentially life-threatening condition that can cause heart arrhythmias and muscle weakness. For individuals with kidney disease or heart disease, potassium supplementation must be carefully monitored due to the risk of dangerous levels building up in the body (hyperkalemia). Potassium supplements can interact with medications such as ACE inhibitors, potassium-sparing diuretics, and angiotensin receptor blockers (ARBs), which can increase potassium levels. Potassium plays a role in regulating the body\u2019s acid-base balance. Individuals with conditions like diabetic ketoacidosis or chronic kidney disease need to manage their potassium intake carefully",
+    "conditions": "Arrhythmia, heart disease, cardivascular conditions. Dehydration. Electrolyte imbalance. Hypokalemia. Diabetes. Muscular diseases"
+  },
+  {
+    "name": "Prebiotics",
+    "benefits": "Gut health - feeds good bacteria. . Mental health and gut-brain axis. Metabolic health. Immune support. Bowel regularity. Weight management. Enhanced recovery in critical illness or post-antibiotics",
+    "sources": "Fruit, legumes, chicory root, potatoes, rice, peas, whole grains. Powders or Capsules standardized to inulin, FOS, GOS, RS, etc. Prebiotic Blends combining multiple fibers for broader microbiome support. Synbiotics that pair prebiotics with specific probiotic strains",
+    "considerations": "Start low and go slow: Rapid increases in fermentable fibers can cause gas, bloating, or cramps\u2014especially in IBS or SIBO. Begin with 2-3 g/day and titrate up over several weeks. Many prebiotics (inulin, FOS, GOS) are high-FODMAP. People with severe IBS may tolerate resistant starch and beta-glucans better than inulin. Adequate fluid intake is essential when increasing fiber to prevent constipation. High-fiber prebiotics can interfere with absorption of certain drugs; take medications 1-2 hours away from large prebiotic doses. While rare, in severely immunosuppressed individuals, rapid microbial shifts could pose risks\u2014use under medical supervision",
+    "conditions": "Gut issues, IBS, IBD or constipation. Metabolic syndrome. Type 2 diabetes. NAFLD"
+  },
+  {
+    "name": "Probiotics",
+    "benefits": "Probiotics support gut health - are good bacteria. Aid digestion. Enhance immune function. May improve mood through the gut-brain axis. Taking specific probiotics like lactobacillus and bifidobacterium strains while on antibiotics helps counterbalance the gut flora disruption caused by antibiotics, supports digestive health, and helps prevent complications like diarrhea or infections",
+    "sources": "Yogurt, kefir, sauerkraut, kimchi, kombucha. Capsules, powders designed for specific case uses",
+    "considerations": "Some strains may cause bloating initially. Must be stored properly to maintain potency. May interfere with certain antibiotics or immunosuppressive medications. To maximize the benefit, it's generally recommended to take probiotics a few hours after taking antibiotics. This helps ensure that the antibiotics don\u2019t kill the probiotics before they have a chance to work. For example, if you take antibiotics in the morning, you might take your probiotic in the afternoon or evening. Taking probiotics daily during and for a few weeks after antibiotic treatment can help rebuild the gut microbiome",
+    "conditions": "Digestive disorders (IBS, IBD, SIBO). Immune function. Skin conditions (eczema, acne). Yeast infections (candida)"
+  },
+  {
+    "name": "Protein",
+    "benefits": "Muscle growth and recovery. Wound healing and immune function Blood sugar regulation. Weight management",
+    "sources": "Various, see below",
+    "considerations": "Excess protein can strain the kidneys in individuals with pre-existing kidney disease",
+    "conditions": "Injury recovery. Chronic fatigue. Weakness. Muscle building"
+  },
+  {
+    "considerations": "Often stacked with CoQ10 or NAD+ precursors. Long-term use is still under study",
+    "name": "PQQ (Pyrroloquinoline Quinone)",
+    "benefits": "Stimulates mitochondrial biogenesis and reduces oxidative stress",
+    "sources": "Fermented soy, green tea; supplements in capsule form",
+    "conditions": "Fatigue, cognitive decline, aging-related dysfunction"
+  },
+  {
+    "name": "Pterostilbene (Antioxidant)",
+    "benefits": "Antioxidant and anti-inflammatory. Supports mitochondrial health, protects cells from oxidative stress. May be anti-aging. Anti-cancer properties. Cognitive health. Blood sugar",
+    "sources": "Blueberries (particularly the skin), grapes, and certain nuts. Supplements: Available in capsule or tablet form, usually derived from blueberry extract",
+    "considerations": "May interact with blood thinners or anticoagulant medications. Is structurally similar to resveratrol but with greater bioavailability. Should be avoided during pregnancy and breastfeeding due to limited research on safety. Pterostilbene has good bioavailability, so it can be taken with or without food. Consider a break or lower dosage if using long-term, as too much antioxidant supplementation may potentially suppress necessary oxidative processes",
+    "conditions": "Fibromyalgia. CFS/ME. Long covid. Autoimmune diseases. Neurodegenerative conditions (Parkinson\u2019s, Alzheimer\u2019s). Diabetes/Metabolic syndrome"
+  },
+  {
+    "name": "Quercetin (Antioxidant)",
+    "benefits": "Polyphenol with anti-inflammatory, anti-histamine and antioxidant properties. Supports immune function and histamine regulation. May help with allergies and respiratory health",
+    "sources": "Onions, apples, citrus fruits, berries, and leafy greens. Capsules, powder",
+    "considerations": "Can interact with blood thinners, blood pressure, and some chemotherapy medications. Has low bioavailability, combine with Vitamin C, bromelain, or fats for better absorption",
+    "conditions": "Allergies and histamine intolerance (MCAS, hay fever). Inflammation and oxidative stress. Cardiovascular health. Immune support (antiviral effects)"
+  },
+  {
+    "name": "Raw Honey (Food, folk remedy)",
+    "benefits": "Natural antimicrobial, prebiotic, and soothing for sore throats and GI irritation. Locally sourced raw honey may help reduce seasonal allergies by exposing the body to trace amounts of regional pollen.",
+    "sources": "Raw/unpasteurized honey",
+    "considerations": "Avoid in infants <1 year. High in sugar",
+    "conditions": "Sore throat, cough, GI upset, seasonal allergies"
+  },
+  {
+    "name": "Reishi Mushroom",
+    "benefits": "Adaptogenic immune modulator; supports stress tolerance, sleep, and liver health",
+    "sources": "Dried mushroom, capsules, teas, tinctures",
+    "considerations": "May lower blood pressure or affect bleeding time. Use with care if taking immune meds",
+    "conditions": "Sleep issues, immune dysregulation, stress overload"
+  },
+  {
+    "name": "Resveratrol (Antioxidant)",
+    "benefits": "Polyphenol with anti-inflammatory and antioxidant properties. Cardiovascular health. It may also help reduce blood pressure, prevent blood clotting, and lower cholesterol levels. Reduces oxidative stress. Anti-Aging. Neuroprotection. Mental health. Anti-cancer properties. Metabolic health - blood sugar regulation. Weight-management. Brain health and cognitive function",
+    "sources": "Red grapes, red wine, berries, peanuts, dark chocolate, japanese knotweed, cocoa",
+    "considerations": "Resveratrol may interact with certain medications, such as blood thinners (e.g., warfarin) and antiplatelet drugs. There is limited research on the safety of resveratrol during pregnancy and breastfeeding. High doses can lead to gastrointestinal issues like diarrhea or stomach upset",
+    "conditions": "Depression and anxiety. Cardiovascular Disease. Heart disease. High blood pressure. Cancer. Neurodegenerative diseases (alzheimer\u2019s and parkinson\u2019s disease). Diabetes and metabolic syndrome. Obesity. Inflammatory conditions. Arthritis and IBD. Liver disease"
+  },
+  {
+    "name": "Rhodiola Rosea (Adaptogen) (Nootropic)",
+    "benefits": "Increases stamina, reduces fatigue, boosts energy, and enhances mental clarity and focus",
+    "considerations": "Best taken in the morning. May interact with stimulants",
+    "conditions": "Stress. Depression. Fatigue. Anxiety. Cognitive function"
+  },
+  {
+    "name": "Royal Jelly / Bee Pollen (Food, folk remedy)",
+    "benefits": "Nutrient-dense bee products used for immunity, energy, and skin health",
+    "sources": "Capsules, softgels, fresh from apiaries",
+    "considerations": "Can cause allergic reactions in pollen-sensitive individuals",
+    "conditions": "Immune depletion, fatigue, skin issues, hormonal imbalance"
+  },
+  {
+    "name": "Rutin (Antioxidant)",
+    "benefits": "Bioflavonoid with antioxidant, anti-inflammatory, and vascular-protective effects; strengthens capillaries, reduces histamine release, and supports collagen stability and circulation",
+    "sources": "Found in buckwheat, citrus peels, apples, and asparagus; available in powder or capsule form, often paired with quercetin or vitamin C",
+    "considerations": "Best taken with food and vitamin C to enhance absorption; generally well-tolerated. Works synergistically with other flavonoids for mast cell and vessel support",
+    "conditions": "MCAS, varicose veins, hemorrhoids, bruising, vascular fragility, inflammation, oxidative stress"
+  },
+  {
+    "name": "Saffron",
+    "benefits": "Supports mood, reduces anxiety and depression, has neuroprotective and antioxidant effects",
+    "sources": "Crocus sativus stigma extract, usually standardized in capsules",
+    "considerations": "Well tolerated. High doses can be sedating or overstimulating in sensitive individuals",
+    "conditions": "Depression, anxiety, PMS, cognitive decline"
+  },
+  {
+    "name": "SAMe (S-Adenosyl methionine)",
+    "benefits": "Supports mood, joint health, and methylation. Natural antidepressant and liver protectant",
+    "sources": "Body-produced; available in enteric-coated tablets",
+    "considerations": "Best taken on an empty stomach. Not for bipolar without supervision. May interact with antidepressants",
+    "conditions": "Depression, arthritis, liver support"
+  },
+  {
+    "name": "Schisandra Berry (Schisandra chinensis) (Adaptogen) (Detox)",
+    "benefits": "Enhances endurance, supports liver health, and improves cognitive function. Acts as a dual regulator: may provide stimulation (more energy, alertness), or promote calmness (reduced anxiety, better sleep), effects vary from person to person",
+    "sources": "Berries of the Schisandra plant, capsules, powder, teas",
+    "considerations": "Inhibits liver enzymes (CYP3A4, CYP2E1, CYP1A2), which can slow the breakdown of medications. Especially important if taking: benzodiazepines, statins, SSRIs/SNRIs, blood thinners (e.g., warfarin), immunosuppressants or antiepileptics. Always consult a pharmacist or integrative doctor if on multiple medications. Start with a low dose to gauge individual response and take with food to limit discomfort. Can raise blood pressure in some cases. May cause GI upset initially, especially at high doses or on an empty stomach. Not recommended in pregnancy without supervision. Individuals with autoimmunce conditions, sever adrenal fatigue, or seizure disorders so use with caution",
+    "conditions": "Stress. Liver detoxification. Fatigue. Immune function"
+  },
+  {
+    "name": "Sea Moss / Irish Moss (Food, mineral)",
+    "benefits": "Contains iodine, selenium, zinc, and more; supports thyroid, skin, and gut health",
+    "sources": "Gel or dried seaweed",
+    "considerations": "May contain heavy metals if sourced poorly",
+    "conditions": "Hypothyroidism, nutrient deficiency, skin issues, gut repair"
+  },
+  {
+    "name": "Selenium",
+    "benefits": "Antioxidant. Anti-viral. Supports thyroid function. May reduce cognitive decline. Supports heart function. Immune system support",
+    "sources": "Brazil nuts, seafood, eggs",
+    "considerations": "Works with Vitamin E. When taken with Iodine supports thyroid function. Excess can be toxic",
+    "conditions": "Thyroid disorders. Cognitive health. Cardiovascular health. Fertility (important for sperm quality and reproductive health)"
+  },
+  {
+    "name": "Shilajit",
+    "benefits": "Rich in fulvic acid and trace minerals; supports mitochondrial energy production, testosterone, and endurance",
+    "sources": "Resin or powder from high-altitude rock exudates (Himalayas, Siberia); purified before use",
+    "considerations": "Use purified sources only. Avoid if heavy metal contamination risk. Can interact with iron metabolism",
+    "conditions": "Fatigue, testosterone deficiency, ME/CFS, chronic stress, metabolic dysfunction"
+  },
+  {
+    "name": "Silica (mineral)",
+    "benefits": "Supports collagen synthesis, skin elasticity, joint health, and nail/hair strength",
+    "sources": "Bamboo extract, horsetail herb, mineral water",
+    "considerations": "Excess can burden kidneys; herbal forms like horsetail must be processed correctly",
+    "conditions": "Brittle nails, weak hair, sagging skin, joint stiffness"
+  },
+  {
+    "name": "Skullcap",
+    "benefits": "Calming herb with anti-inflammatory and sedative effects",
+    "sources": "Teas, tinctures, capsules",
+    "considerations": "Avoid with sedatives or alcohol. Some varieties may contain hepatotoxic compounds",
+    "conditions": "Insomnia, anxiety, nervous tension"
+  },
+  {
+    "name": "Slippery Elm",
+    "benefits": "Soothes and coats the digestive tract. Reduces irritation and inflammation in the gut lining. May relieve symptoms of IBS, gastritis, acid reflux, and sore throat. Promotes regular bowel movements by softening stool.",
+    "sources": "Inner bark of the slippery elm tree. Available as powders, capsules, lozenges, or teas. Often found in gut-support blends or throat soothing formulas.",
+    "considerations": "Take away from medications and supplements (at least 1\u20132 hours) as it may interfere with absorption due to its mucilage content. Safe for short-term use; long-term safety not well studied. Pregnant people should consult a healthcare provider before use.",
+    "conditions": "IBS (both constipation- and diarrhea-predominant types). Gastritis and acid reflux. Ulcers or leaky gut. Sore throat and upper GI irritation."
+  },
+  {
+    "name": "Spermidine (coenzyme, enzyme, antioxidant)",
+    "benefits": "Promotes autophagy and cellular renewal. May support longevity and mitochondrial health",
+    "sources": "Aged cheese, wheat germ; supplement capsules",
+    "considerations": "Usually paired with polyamines (e.g., spermine) and NAD+ boosters",
+    "conditions": "Aging, cognitive decline, mitochondrial dysfunction, hair thinning"
+  },
+  {
+    "name": "Spirulina (Detox)",
+    "benefits": "High in protein, vitamins, and minerals. Detoxifies heavy metals. Supports immune and gut health. Boosts energy",
+    "sources": "Blue-green algae. Powder, tablets",
+    "considerations": "Easily digested, providing bioavailable nutrients and antioxidants like phycocyanin. Taking with food improves tolerance. Can cause digestive upset in high doses. Avoid if allergic to algae or iodine",
+    "conditions": "Nutrient deficiencies. Heavy metal detox. Chronic fatigue. Immune system support"
+  },
+  {
+    "name": "Sodium (Electrolyte)",
+    "benefits": "Hydration balance. Blood pressure regulation: Sodium can influence blood pressure, which is particularly important for people with hypertension or hypotension. Muscle function, helps prevent muscle cramps or spasms. Nerve function",
+    "sources": "Processed foods, salt, dairy, pickled foods, Condiments (soy sauce, ketchup), meats (especially cured or salted)",
+    "considerations": "Sodium supplementation should be done cautiously, as most people get enough sodium from their regular diet. In cases of low sodium (hyponatremia), electrolytes can be replaced with oral rehydration solutions or by consuming salty foods. Excessive sodium intake can lead to high blood pressure, edema (fluid retention), and increase the risk of cardiovascular events. Symptoms of overuse include swelling, headaches, dizziness, and in severe cases, kidney damage or heart failure exacerbation. Those with kidney dysfunction may struggle to balance sodium, as the kidneys' ability to excrete it is compromised. People with heart failure or other heart diseases should be cautious about sodium intake to avoid fluid buildup, which can worsen symptoms. Sodium can interact with certain medications, including diuretics and blood pressure medications. Put a sprinkle of salt in your water to aid hydration",
+    "conditions": "Dehydration. Fibromyalgia. MS. Electrolyte imbalance. Diabetes"
+  },
+  {
+    "name": "Sodium Bicarbonate (aka Baking Soda) (folk remedy, detox)",
+    "benefits": "Alkalizes pH, supports kidney function, relieves heartburn, and aids recovery in athletes",
+    "sources": "Baking soda (food-grade)",
+    "considerations": "May raise blood pressure. Use caution with kidney or heart issues",
+    "conditions": "Acid reflux, metabolic acidosis, lactic acid build-up, gout"
+  },
+  {
+    "name": "Sodium Butyrate",
+    "benefits": "Strengthens gut barrier, nourishes colon cells, reduces intestinal inflammation, and supports short-chain fatty acid balance",
+    "sources": "Produced naturally by gut bacteria fermenting fiber; supplemented as capsules (often odor-protected)",
+    "considerations": "May cause gas or bloating at first. Start low. Smell can be strong",
+    "conditions": "Leaky gut, IBS, IBD, histamine intolerance, brain fog"
+  },
+  {
+    "name": "Taurine",
+    "benefits": "Cardiovascular health. Regulates blood pressure and electrolyte balance. Reduces anxiety and protects cells from oxidative damage. Brain function. Enhances endurance and reduces muscle damage. Protects against retinal damage",
+    "sources": "Meat, seafood, dairy products, energy drinks (often synthetic taurine). Powder, capsules",
+    "considerations": "Well-absorbed, can be taken with or without food. Works synergistically with magnesium for relaxation and hydration support. Often included in pre-workout or recovery supplements. Can enhance the calming effects of magnesium and glycine. Supplements are typically not vegan/vegetarian, but some are available",
+    "conditions": "Heart disease. Anxiety. Electrolyte imbalances. Oxidative stress. Fatigue"
+  },
+  {
+    "name": "Theanine (L-Theanine) (Amino Acid) (Nootropic)",
+    "benefits": "Promotes relaxation, reduces stress and anxiety. Improves sleep. Cognitive enhancement: Improves focus, memory, and mental clarity, especially when combined with caffeine. Mildly lowers blood pressure",
+    "sources": "Green and black tea, some mushrooms. Powder, capsules",
+    "considerations": "May enhance the calming effects of sedatives or anti-anxiety medications. Can counteract some of the jitteriness caused by caffeine, potentially improving focus when taken alongside caffeine. Works well with melatonin",
+    "conditions": "Anxiety. Focus and cognitive function. Insomnia and sleep support. High blood pressure"
+  },
+  {
+    "name": "Threonine (EAA)",
+    "benefits": "Supports joint, gut and skin health - Involved in collagen and elastin production. Immune function. Mood regulation - precursor to dopamine",
+    "sources": "Meat, fish, poultry, eggs, dairy. Vegan  quinoa, chia seeds, spinach, pumpkin seeds, lentils",
+    "considerations": "Best absorbed with magnesium and Vitamin B6",
+    "conditions": "Joint and skin health. Digestive Issues (IBS, IBD, leaky gut).  Immune System Support - Strengthens antibody production. Depression and anxiety"
+  },
+  {
+    "name": "Tryptophan (EAA)",
+    "benefits": "Sleep, mood and appetite regulation. Crucial for the production of seratonin and melatonin",
+    "sources": "Turkey, chicken, eggs, dairy, nuts and seeds, soy products",
+    "considerations": "Taking tryptophan with antidepressants (e.g., SSRIs or MAOIs) can increase serotonin levels too much, leading to serotonin syndrome, which is dangerous. Alcohol and certain medications can reduce its effectiveness, as they impact serotonin production",
+    "conditions": "Depression and anxiety. Insomnia and sleep disorders. PMS and mood regulation. Chronic pain and Fibromyalgia. Appetite control and weight management. Chronic fatigue"
+  },
+  {
+    "name": "TUDCA (Tauroursodeoxycholic Acid) (Coenzyme/enzyme, detox)",
+    "benefits": "Supports liver and bile duct function. May protect mitochondria and reduce neuroinflammation",
+    "sources": "Synthetic form in capsules",
+    "considerations": "Often used in liver conditions; can cause GI upset in sensitive individuals",
+    "conditions": "Cholestasis, liver detox, mitochondrial health, gallbladder support"
+  },
+  {
+    "name": "Ubiquinol",
+    "benefits": "Supports mitochondrial energy production. Improves heart health. Reduces oxidative stress",
+    "sources": "Fatty fish, organ meats, spinach, broccoli",
+    "considerations": "Can interact with statin medications (may be depleted by them). Take with a fat-containing meal. Ubiquinol is more bioavailable than Coq10, especially for older individuals",
+    "conditions": "Heart disease. Migraines. Chronic fatigue. Neurodegenerative diseases. Fibromyalgia"
+  },
+  {
+    "name": "Valerian Root",
+    "benefits": "Promotes relaxation, calmness and sleep. May help with anxiety and nervous tension",
+    "sources": "Capsules, tinctures, tea",
+    "considerations": "Can cause drowsiness\u2014avoid driving after use. May interact with sedatives or alcohol",
+    "conditions": "Insomnia and sleep disturbances. Anxiety and nervous tension, muscle relaxation. Stress-related conditions"
+  },
+  {
+    "name": "Vitex (Chaste Tree Berry)",
+    "benefits": "Regulates hormonal cycles, supports progesterone balance, and reduces PMS or menopausal symptoms. May improve luteal phase defects.",
+    "sources": "Dried berries, tinctures, capsules.",
+    "considerations": "Slow-acting\u2014may take 2\u20133 months to see effects. Avoid if using hormonal contraceptives or during pregnancy unless directed. Can worsen mood in some sensitive individuals.",
+    "conditions": "PMS, PMDD, irregular cycles, fertility support, menopausal symptoms, luteal phase insufficiency."
+  },
+  {
+    "name": "Wheatgrass",
+    "benefits": "Rich in chlorophyll and antioxidants. Claimed to boost detoxification and energy.",
+    "sources": "Juice bars, powders, fresh trays",
+    "considerations": "Limited evidence. May cause nausea or allergic reaction.",
+    "conditions": "Anecdotally used for fatigue, digestion, and skin issues."
+  },
+  {
+    "name": "White Oak (Quercus alba)",
+    "benefits": "Anti-inflammatory. Astringent properties. Reduces fluid loss (helpful for diarrhea). Wound healing. Anti-microbial and anti-fungal - great for oral and skin infections. Oral health and digestive support",
+    "sources": "Teas, tinctures, topical, capsules, gargles",
+    "considerations": "Can be harsh on the stomach - the high tannin content may cause irritation in those with sensitive digestion (e.g., gastritis, ulcers). Prolonged use may interfere with nutrient absorption due to tannins binding to minerals. Can affect iron absorption and interact with blood thinners. Not recommended for severe kidney disease. Use caution with autoimmunity - While anti-inflammatory, it may also stimulate immune responses",
+    "conditions": "Diarrhea and digestive issues. Skin conditions (inflammation, chilblains). Hemorrhoids and varicose veins. Oral health. Arthritis and joint pain. Infections (fungal, bacterial, and some viral infections)"
+  },
+  {
+    "name": "Xanthan Gum",
+    "benefits": "May support gut health in small amounts. Blood sugar regulation",
+    "sources": "Powder",
+    "considerations": "Not fully digested\u2014acts as a soluble fiber. Can cause bloating or gas in sensitive individuals in high quantities. Best used in small amounts. Helps stabilize insulin response when added to carbohydrate-rich meals",
+    "conditions": "Dysphagia. Gut issues like gastroparesis, IBS-D. Type 2 diabetes and insulin resistance"
+  },
+  {
+    "name": "Yarrow",
+    "benefits": "Wound healing and skin conditions. Anti-inflammatory. Aids digestion. Menstrual cramps and heavy periods. Circulatory issues (varicose veins, poor circulation). may help ease anxiety",
+    "sources": "Teas, tinctures, capsules",
+    "considerations": "Can cause allergic reactions in sensitive individuals",
+    "conditions": "Digestive issues (bloating, IBS). Skin health. Immune function"
+  },
+  {
+    "name": "Zeolite",
+    "benefits": "Natural binder that traps heavy metals, mold toxins, and environmental pollutants; supports detox without overburdening the liver",
+    "sources": "Volcanic mineral; often micronized or activated in powder or capsule form",
+    "considerations": "Must be high-quality and tested for contaminants. Drink plenty of water. Avoid if severely constipated",
+    "conditions": "Mold illness, MCS, Lyme, detox support, chemical sensitivity"
+  },
+  {
+    "name": "Zinc",
+    "benefits": "Supports immune function, skin health, and protein synthesis. Essential for DNA synthesis and cell division. Aids in Vitamin A metabolism",
+    "sources": "Meat, shellfish, legumes, seeds, nuts",
+    "considerations": "Avoid taking high doses with calcium or iron as they may interfere with absorption. High doses may cause nausea",
+    "conditions": "Immune function. Skin and hair health. Wound healing"
+  },
+  {
+    "name": "Zinc Carnosine",
+    "benefits": "Supports gut lining integrity and mucosal repair. Antioxidant. Enhances wound healing in gastrointestinal tissue.",
+    "sources": "Complex of zinc and the dipeptide carnosine; capsules or powders.",
+    "considerations": "Distinct from regular zinc supplements. Typically dosed ~75 mg/day of zinc carnosine (not elemental zinc). Well studied in gastric ulcers.",
+    "conditions": "Leaky gut, GERD, gastric ulcers, NSAID-induced mucosal damage, IBS/IBD."
+  },
+  {
+    "name": "ZMA (Zinc Monomethionine Aspartate)",
+    "benefits": "Combines zinc, magnesium, and B6 to support sleep, testosterone, and recovery",
+    "sources": "Preformulated supplement, often marketed to athletes",
+    "considerations": "Best taken before bed on an empty stomach. May cause vivid dreams",
+    "conditions": "Insomnia, muscle recovery, testosterone support"
+  }
+]
