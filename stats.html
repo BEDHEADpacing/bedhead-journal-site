@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BEDHEAD Stats Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #cbfcda, #b1dceb);
+      color: #222;
+    }
+    .logo {
+      text-align: center;
+      padding: 1em;
+      background: white;
+    }
+    .logo img {
+      max-width: 340px;
+      height: auto;
+    }
+    nav {
+      background: white;
+      text-align: center;
+      padding: 1em;
+    }
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 1em;
+      background: rgba(255,255,255,0.85);
+      border-radius: 8px;
+    }
+    h2 {
+      margin-top: 2em;
+    }
+    table {
+      width: 100%;
+      border-spacing: 0.5em;
+    }
+    input {
+      width: 100%;
+      padding: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 1em;
+      padding: 0.5em 1.5em;
+      font-weight: bold;
+      background: #b1dceb;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    canvas {
+      margin-top: 2em;
+      background: white;
+      padding: 1em;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <a href="index.html"><img src="logo2nobg.png" alt="BEDHEAD Logo"></a>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="howto.html">How to Use Your Journal</a>
+    <a href="resources.html">Resources</a>
+    <a href="vitamindex.html">Vitamindex</a>
+    <a href="soundbath.html">Soundbath Room</a>
+    <a href="stats.html">Stats Calculator</a>
+  </nav>
+  <div class="container">
+    <h2>Weekly Correlation Calculator</h2>
+    <p>This tool helps you understand the relationship between number of activities completed and number of symptoms experienced across a single week.</p>
+    <form id="weekForm">
+      <table>
+        <tr><th>Day</th><th>Activities</th><th>Symptoms</th></tr>
+        <tr><td>Mon</td><td><input name='weekActs' /></td><td><input name='weekSyms' /></td></tr>
+<tr><td>Tue</td><td><input name='weekActs' /></td><td><input name='weekSyms' /></td></tr>
+<tr><td>Wed</td><td><input name='weekActs' /></td><td><input name='weekSyms' /></td></tr>
+<tr><td>Thu</td><td><input name='weekActs' /></td><td><input name='weekSyms' /></td></tr>
+<tr><td>Fri</td><td><input name='weekActs' /></td><td><input name='weekSyms' /></td></tr>
+<tr><td>Sat</td><td><input name='weekActs' /></td><td><input name='weekSyms' /></td></tr>
+<tr><td>Sun</td><td><input name='weekActs' /></td><td><input name='weekSyms' /></td></tr>
+      </table>
+      <button type="submit">Calculate Weekly r</button>
+    </form>
+    <div id="weeklyResult"></div>
+    
+<div class="explanation">
+  <h3>Understanding Your Weekly r</h3>
+  <p>
+    This score (Pearson correlation) shows the relationship between your activity and symptoms over a week.
+    A <strong>negative r</strong> (e.g., -0.7) means more activity tends to result in fewer symptoms — a sign of good pacing.
+    A <strong>positive r</strong> (e.g., +0.6) means more activity increases symptoms — possibly a pacing mismatch or overexertion.
+    An r close to <strong>0</strong> means your activity and symptoms don’t consistently relate — mixed or delayed responses.
+  </p>
+</div>
+<canvas id="weeklyChart"></canvas>
+
+    <h2>Weekly r Variance</h2>
+    <form id="varianceForm">
+      <p>Enter four weekly r values:</p>
+      <table><tr><td><input name='r' /></td><td><input name='r' /></td><td><input name='r' /></td><td><input name='r' /></td></tr></table>
+      <button type="submit">Calculate Variance</button>
+    </form>
+    <div id="varianceResult"></div>
+
+    <h2>Monthly Correlation Calculator</h2>
+    <p>Enter your activity and symptom counts across the month (28 days):</p>
+    <form id="monthForm">
+      <table>
+        <tr><th>Day</th><th>Activities</th><th>Symptoms</th></tr>
+        <tr><td>Day 1</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 2</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 3</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 4</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 5</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 6</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 7</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 8</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 9</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 10</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 11</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 12</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 13</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 14</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 15</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 16</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 17</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 18</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 19</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 20</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 21</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 22</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 23</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 24</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 25</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 26</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 27</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+<tr><td>Day 28</td><td><input name='monthActs' /></td><td><input name='monthSyms' /></td></tr>
+      </table>
+      <button type="submit">Calculate Monthly r</button>
+    </form>
+    <div id="monthlyResult"></div>
+    
+<div class="explanation">
+  <h3>Understanding Your Monthly r</h3>
+  <p>
+    This is your long-term activity/symptom trend. It aggregates the whole month (28 days).
+    Use it to see your overall trajectory and whether your pacing strategy is helping or needs adjusting.
+  </p>
+</div>
+<canvas id="monthlyChart"></canvas>
+  </div>
+
+  <script>
+    function pearson(x, y) {
+      const n = x.length;
+      const xMean = x.reduce((a,b) => a+b, 0)/n;
+      const yMean = y.reduce((a,b) => a+b, 0)/n;
+      const num = x.reduce((acc, xi, i) => acc + (xi - xMean) * (y[i] - yMean), 0);
+      const denX = Math.sqrt(x.reduce((acc, xi) => acc + (xi - xMean) ** 2, 0));
+      const denY = Math.sqrt(y.reduce((acc, yi) => acc + (yi - yMean) ** 2, 0));
+      return num / (denX * denY);
+    }
+
+    document.getElementById("weekForm").onsubmit = function(e) {
+      e.preventDefault();
+      const acts = [...document.getElementsByName("weekActs")].map(i => +i.value);
+      const syms = [...document.getElementsByName("weekSyms")].map(i => +i.value);
+      const r = pearson(acts, syms);
+      document.getElementById("weeklyResult").textContent = "r = " + r.toFixed(3);
+      new Chart(document.getElementById("weeklyChart"), {
+        type: "bar",
+        data: {
+          labels: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+          datasets: [
+            { label: "Activities", data: acts, backgroundColor: "#cbfcda" },
+            { label: "Symptoms", data: syms, type: "line", borderColor: "#b1dceb", borderWidth: 2, fill: false }
+          ]
+        }
+      });
+    };
+
+    document.getElementById("varianceForm").onsubmit = function(e) {
+      e.preventDefault();
+      const values = [...document.getElementsByName("r")].map(i => +i.value);
+      const avg = values.reduce((a,b) => a+b)/values.length;
+      const variance = values.reduce((a,v) => a + (v - avg) ** 2, 0) / values.length;
+      document.getElementById("varianceResult").textContent = "Variance = " + variance.toFixed(4);
+    };
+
+    document.getElementById("monthForm").onsubmit = function(e) {
+      e.preventDefault();
+      const acts = [...document.getElementsByName("monthActs")].map(i => i.value).filter(v => v !== "").map(Number);
+      const syms = [...document.getElementsByName("monthSyms")].map(i => i.value).filter(v => v !== "").map(Number);
+      if (acts.length !== syms.length || acts.length === 0) return alert("Please ensure both columns are filled for each day used.");
+      const r = pearson(acts, syms);
+      document.getElementById("monthlyResult").textContent = "r = " + r.toFixed(3);
+      new Chart(document.getElementById("monthlyChart"), {
+        type: "bar",
+        data: {
+          labels: acts.map((_, i) => "Day " + (i + 1)),
+          datasets: [
+            { label: "Activities", data: acts, backgroundColor: "#cbfcda" },
+            { label: "Symptoms", data: syms, type: "line", borderColor: "#b1dceb", borderWidth: 2, fill: false }
+          ]
+        }
+      });
+    };
+  </script>
+</body>
+</html>
