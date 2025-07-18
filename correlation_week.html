@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BEDHEAD Correlation Calculator (Weekly)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 2em;
+      background: linear-gradient(to bottom, #cbfcda, #b1dceb);
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 0.5em;
+    }
+    table {
+      width: 100%;
+      max-width: 600px;
+      margin: 1em auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.5em;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 0.4em;
+      font-size: 1em;
+    }
+    button {
+      padding: 0.7em 1.5em;
+      font-size: 1em;
+      background-color: #5ba3c7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 1em;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weekly Correlation Calculator</h1>
+  <p>Enter symptom severity and number of tasks completed for each day.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Symptom Severity (1–5)</th>
+        <th>Tasks Completed (0–7)</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <!-- 7 rows -->
+      <tr><td>Monday</td><td><input type="number" min="1" max="5" /></td><td><input type="number" min="0" max="7" /></td></tr>
+      <tr><td>Tuesday</td><td><input type="number" min="1" max="5" /></td><td><input type="number" min="0" max="7" /></td></tr>
+      <tr><td>Wednesday</td><td><input type="number" min="1" max="5" /></td><td><input type="number" min="0" max="7" /></td></tr>
+      <tr><td>Thursday</td><td><input type="number" min="1" max="5" /></td><td><input type="number" min="0" max="7" /></td></tr>
+      <tr><td>Friday</td><td><input type="number" min="1" max="5" /></td><td><input type="number" min="0" max="7" /></td></tr>
+      <tr><td>Saturday</td><td><input type="number" min="1" max="5" /></td><td><input type="number" min="0" max="7" /></td></tr>
+      <tr><td>Sunday</td><td><input type="number" min="1" max="5" /></td><td><input type="number" min="0" max="7" /></td></tr>
+    </tbody>
+  </table>
+  <button onclick="calculateCorrelation()">Calculate Correlation</button>
+  <div class="result" id="result"></div>
+
+  <script>
+    function calculateCorrelation() {
+      const rows = document.querySelectorAll('#table-body tr');
+      let symptoms = [], tasks = [];
+
+      rows.forEach(row => {
+        const inputs = row.querySelectorAll('input');
+        const symptom = parseFloat(inputs[0].value);
+        const task = parseFloat(inputs[1].value);
+        if (!isNaN(symptom) && !isNaN(task)) {
+          symptoms.push(symptom);
+          tasks.push(task);
+        }
+      });
+
+      const mean = arr => arr.reduce((a, b) => a + b) / arr.length;
+      const sx = symptoms, sy = tasks;
+      const mx = mean(sx), my = mean(sy);
+
+      let numerator = 0, dx = 0, dy = 0;
+      for (let i = 0; i < sx.length; i++) {
+        const x = sx[i] - mx;
+        const y = sy[i] - my;
+        numerator += x * y;
+        dx += x * x;
+        dy += y * y;
+      }
+
+      const r = numerator / Math.sqrt(dx * dy);
+      const output = document.getElementById("result");
+      if (!isNaN(r)) {
+        output.textContent = `r = ${r.toFixed(2)} (${interpretCorrelation(r)})`;
+      } else {
+        output.textContent = "Please fill out all fields to calculate correlation.";
+      }
+    }
+
+    function interpretCorrelation(r) {
+      const absR = Math.abs(r);
+      if (absR >= 0.8) return "strong";
+      if (absR >= 0.5) return "moderate";
+      if (absR >= 0.3) return "weak";
+      return "very weak or none";
+    }
+  </script>
+</body>
+</html>
