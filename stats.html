@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stats Calculator – BEDHEAD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #cbfcda, #b1dceb);
+      color: #333;
+    }
+    .logo {
+      text-align: center;
+      padding: 1em 1em 0.5em;
+      background: #fff;
+    }
+    .logo img {
+      max-width: 340px;
+      height: auto;
+      margin: 0 auto;
+    }
+    nav {
+      width: 100%;
+      text-align: center;
+      background: #fff;
+      padding: 1em 0;
+    }
+    nav a {
+      margin: 0 1em;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover, nav a[href="stats.html"] {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    section {
+      margin-bottom: 3em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      padding: 0.5em;
+      text-align: center;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 0.5em;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 0.7em 1.5em;
+      background-color: #5ba3c7;
+      color: white;
+      border: none;
+      font-size: 1em;
+      border-radius: 4px;
+      margin-top: 1em;
+      cursor: pointer;
+    }
+    canvas {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1em;
+      margin-top: 2em;
+    }
+    .footer {
+      text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo2nobg.png" alt="BEDHEAD Logo">
+    </a>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="howto.html">How to Use Your Journal</a>
+    <a href="resources.html">Resources</a>
+    <a href="vitamindex.html">Vitamindex</a>
+    <a href="soundbath.html">Soundbath Room</a>
+    <a href="stats.html">Stats Calculator</a>
+  </nav>
+
+  <div class="container">
+    <h2>Weekly Correlation Calculator</h2>
+    <p>This tool helps you understand the relationship between number of activities completed and number of symptoms experienced across a single week.</p>
+    <form id="weekForm">
+      <table>
+        <tr><th>Day</th><th>Activities</th><th>Symptoms</th></tr>
+        ${["Mon","Tue","Wed","Thu","Fri","Sat","Sun"].map(day => `
+          <tr>
+            <td>${day}</td>
+            <td><input type="number" name="activities" required></td>
+            <td><input type="number" name="symptoms" required></td>
+          </tr>`).join('')}
+      </table>
+      <button type="submit">Calculate Weekly r</button>
+    </form>
+    <p id="weeklyResult"></p>
+    <canvas id="weeklyChart"></canvas>
+
+    <h2>Weekly r Variance</h2>
+    <form id="varianceForm">
+      <p>Enter four weekly r values below:</p>
+      <input type="number" step="any" name="r" required>
+      <input type="number" step="any" name="r" required>
+      <input type="number" step="any" name="r" required>
+      <input type="number" step="any" name="r" required>
+      <button type="submit">Calculate Variance</button>
+    </form>
+    <p id="varianceResult"></p>
+
+    <h2>Monthly Correlation Calculator</h2>
+    <p>Enter data for 28 days. Fill in only what you can — leave blank days empty.</p>
+    <form id="monthForm">
+      <table>
+        <tr><th>Day</th><th>Activities</th><th>Symptoms</th></tr>
+        ${Array.from({length: 28}, (_, i) => `
+          <tr>
+            <td>Day ${i + 1}</td>
+            <td><input type="number" name="monthActivities"></td>
+            <td><input type="number" name="monthSymptoms"></td>
+          </tr>`).join('')}
+      </table>
+      <button type="submit">Calculate Monthly r</button>
+    </form>
+    <p id="monthlyResult"></p>
+    <canvas id="monthlyChart"></canvas>
+  </div>
+
+  <footer class="footer">
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact Us</a>
+    <p style="margin-top: 1em;">© BEDHEAD Journal. All rights reserved.</p>
+  </footer>
+
+<script>
+function pearson(x, y) {
+  const n = x.length;
+  const xMean = x.reduce((a, b) => a + b, 0) / n;
+  const yMean = y.reduce((a, b) => a + b, 0) / n;
+  const num = x.reduce((acc, xi, i) => acc + (xi - xMean) * (y[i] - yMean), 0);
+  const denX = Math.sqrt(x.reduce((acc, xi) => acc + (xi - xMean) ** 2, 0));
+  const denY = Math.sqrt(y.reduce((acc, yi) => acc + (yi - yMean) ** 2, 0));
+  return num / (denX * denY);
+}
+
+document.getElementById("weekForm").onsubmit = function(e) {
+  e.preventDefault();
+  const acts = [...e.target.elements["activities"]].map(i => +i.value);
+  const syms = [...e.target.elements["symptoms"]].map(i => +i.value);
+  const r = pearson(acts, syms);
+  document.getElementById("weeklyResult").textContent = "r = " + r.toFixed(2);
+  new Chart(document.getElementById("weeklyChart"), {
+    type: "bar",
+    data: {
+      labels: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+      datasets: [
+        { label: "Activities", data: acts, backgroundColor: "#cbfcda" },
+        { label: "Symptoms", data: syms, type: "line", borderColor: "#b1dceb", borderWidth: 2, fill: false }
+      ]
+    }
+  });
+};
+
+document.getElementById("varianceForm").onsubmit = function(e) {
+  e.preventDefault();
+  const values = [...e.target.elements["r"]].map(i => +i.value);
+  const avg = values.reduce((a,b) => a+b)/values.length;
+  const variance = values.reduce((a,v) => a + (v - avg) ** 2, 0) / values.length;
+  document.getElementById("varianceResult").textContent = "Variance = " + variance.toFixed(4);
+};
+
+document.getElementById("monthForm").onsubmit = function(e) {
+  e.preventDefault();
+  const acts = [...e.target.elements["monthActivities"]].map(i => i.value).filter(v => v !== "").map(Number);
+  const syms = [...e.target.elements["monthSymptoms"]].map(i => i.value).filter(v => v !== "").map(Number);
+  if (acts.length !== syms.length || acts.length === 0) return alert("Please ensure both columns are filled for each day used.");
+  const r = pearson(acts, syms);
+  document.getElementById("monthlyResult").textContent = "r = " + r.toFixed(2);
+  new Chart(document.getElementById("monthlyChart"), {
+    type: "bar",
+    data: {
+      labels: acts.map((_, i) => "Day " + (i + 1)),
+      datasets: [
+        { label: "Activities", data: acts, backgroundColor: "#cbfcda" },
+        { label: "Symptoms", data: syms, type: "line", borderColor: "#b1dceb", borderWidth: 2, fill: false }
+      ]
+    }
+  });
+};
+</script>
+
+</body>
+</html>
