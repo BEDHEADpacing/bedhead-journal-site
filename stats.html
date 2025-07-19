@@ -159,34 +159,6 @@ function pearsonCorrelation(x, y) {
   return (numerator / (denomX * denomY)).toFixed(3);
 }
 
-  function calculateMoodStats() {
-  const input = document.getElementById('moodInput').value;
-  const scores = input.split(',').map(n => parseFloat(n.trim())).filter(n => !isNaN(n));
-  if (scores.length === 0) return;
-
-  const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
-  const stdDev = Math.sqrt(scores.reduce((a, b) => a + Math.pow(b - avg, 2), 0) / scores.length);
-
-  const fullStars = Math.floor(avg);
-  const halfStar = avg - fullStars >= 0.5 ? 1 : 0;
-  const emptyStars = 5 - fullStars - halfStar;
-
-  const starsHTML = '★'.repeat(fullStars) + (halfStar ? '½' : '') + '☆'.repeat(emptyStars);
-
-  let interpretation = `Your average mood score is ${avg.toFixed(2)}, shown below in stars.`;
-  interpretation += `<br>Standard deviation: ${stdDev.toFixed(2)} — `;
-  if (stdDev < 0.5) interpretation += "a fairly stable mood pattern.";
-  else if (stdDev < 1) interpretation += "some variation — worth keeping an eye on.";
-  else interpretation += "quite a bit of mood fluctuation this period.";
-
-  interpretation += `<br><br><em>Note: Even a stable pattern isn’t always ideal — check that you’re not stuck in low mood or burnout. Let this inform, not define, your pacing.</em>`;
-
-  document.getElementById('moodResult').innerHTML = `
-    <div class="stars">${starsHTML}</div>
-    <p>${interpretation}</p>
-  `;
-}
-
 function interpretR(r) {
   const val = parseFloat(r);
   if (val <= -0.7) return "Strong Negative: More activity = noticeably fewer symptoms.";
@@ -195,7 +167,33 @@ function interpretR(r) {
   if (val < 0.7) return "Weak Positive: More activity = more symptoms.";
   return "Strong Positive: More activity = way more symptoms.";
 }
+  
+function calculateMoodStats() {
+  const input = document.getElementById('moodInput').value;
+  const scores = input.split(',').map(n => parseFloat(n.trim())).filter(n => !isNaN(n));
+  if (scores.length === 0) return;
 
+  const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
+  const stdDev = Math.sqrt(scores.reduce((a, b) => a + Math.pow(b - avg, 2), 0) / scores.length);
+
+  let moodBand = "";
+  if (avg < 2) moodBand = "Very low average";
+  else if (avg < 3) moodBand = "Low-average";
+  else if (avg < 4) moodBand = "Moderate";
+  else if (avg <= 4.5) moodBand = "Generally high";
+  else moodBand = "Very high";
+
+  let sdInterpretation = "";
+  if (stdDev < 0.5) sdInterpretation = "a fairly stable pattern.";
+  else if (stdDev < 1) sdInterpretation = "some variation — worth keeping an eye on.";
+  else sdInterpretation = "significant fluctuation — you may want to explore why.";
+
+  document.getElementById('moodResult').innerHTML = `
+    <p><strong>Average:</strong> ${avg.toFixed(2)} (${moodBand})</p>
+    <p><strong>Standard Deviation:</strong> ${stdDev.toFixed(2)} — ${sdInterpretation}</p>
+    <p><em>Stable data isn't always good — a consistent low average or intense variation may still indicate distress. Use this to support insight, not replace it.</em></p>
+  `;
+}
 function calculateWeekly() {
   const a = document.getElementById("weeklyActivities").value.split(',').map(Number);
   const s = document.getElementById("weeklySymptoms").value.split(',').map(Number);
