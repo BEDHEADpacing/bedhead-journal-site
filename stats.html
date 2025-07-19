@@ -142,6 +142,12 @@
   <canvas id="monthlyChart" width="400" height="200"></canvas>
 </div>
 
+  <h2>General Pattern Calculator</h2>
+<p>Enter any numeric data (e.g., hours slept, steps walked, meals eaten) separated by commas. This will calculate the average, standard deviation, and variance for that dataset:</p>
+<input type="text" id="generalInput" placeholder="e.g., 5, 6, 7.5, 8, 6, 7">
+<button onclick="calculateGeneralStats()">Calculate</button>
+<div class="output" id="generalResult"></div>
+
 <footer class="footer">
   <a href="faq.html">FAQ</a>
   <a href="contact.html">Contact Us</a>
@@ -203,6 +209,23 @@ function calculateWeekly() {
 
 Note: A stable r value doesn't always mean good pacing. If you're consistently overdoing it and crashing, your correlation may still appear stable. Always consider context.`;
   drawChart("weeklyChart", a, s);
+}
+
+  function calculateGeneralStats() {
+  const input = document.getElementById('generalInput').value;
+  const numbers = input.split(',').map(n => parseFloat(n.trim())).filter(n => !isNaN(n));
+  if (numbers.length === 0) return;
+
+  const avg = numbers.reduce((a, b) => a + b, 0) / numbers.length;
+  const variance = numbers.reduce((a, b) => a + Math.pow(b - avg, 2), 0) / numbers.length;
+  const stdDev = Math.sqrt(variance);
+
+  document.getElementById('generalResult').innerHTML = `
+    <p><strong>Average:</strong> ${avg.toFixed(2)}</p>
+    <p><strong>Standard Deviation:</strong> ${stdDev.toFixed(2)}</p>
+    <p><strong>Variance:</strong> ${variance.toFixed(4)}</p>
+    <p><em>These calculations help you understand consistency and change — use them to track patterns over time and explore what affects your stability.</em></p>
+  `;
 }
 
 function calculateMonthly() {
