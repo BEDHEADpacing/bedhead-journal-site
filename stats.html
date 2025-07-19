@@ -70,6 +70,11 @@
       margin-top: 1em;
       font-weight: 500;
     }
+    .stars {
+  font-size: 2em;
+  color: #f8b84e;
+  margin: 0.5em 0;
+}
     canvas {
       margin-top: 1em;
       background: white;
@@ -126,6 +131,13 @@
   <button onclick="calculateVariance()">Calculate Variance</button>
   <div class="output" id="varianceResult"></div>
 
+<hr>
+<h2>Mood Stability Calculator</h2>
+<p>Enter your mood scores (from 1–5) for a week or month, separated by commas:</p>
+<input type="text" id="moodInput" placeholder="e.g., 3, 4, 2, 5, 3, 3, 4">
+<button onclick="calculateMoodStats()">Calculate</button>
+<div id="moodResult" class="result"></div>
+  
   <h2>Monthly Correlation Calculator</h2>
   <p>Enter your activity and symptom counts across the month (28 days) to see your long-term correlation trend.</p>
   <textarea id="monthlyActivities" placeholder="Enter 28 activity values, comma-separated"></textarea>
@@ -150,6 +162,34 @@ function pearsonCorrelation(x, y) {
   const denomX = Math.sqrt(x.map(a=>Math.pow(a-avgX,2)).reduce((a,b)=>a+b));
   const denomY = Math.sqrt(y.map(a=>Math.pow(a-avgY,2)).reduce((a,b)=>a+b));
   return (numerator / (denomX * denomY)).toFixed(3);
+}
+
+  function calculateMoodStats() {
+  const input = document.getElementById('moodInput').value;
+  const scores = input.split(',').map(n => parseFloat(n.trim())).filter(n => !isNaN(n));
+  if (scores.length === 0) return;
+
+  const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
+  const stdDev = Math.sqrt(scores.reduce((a, b) => a + Math.pow(b - avg, 2), 0) / scores.length);
+
+  const fullStars = Math.floor(avg);
+  const halfStar = avg - fullStars >= 0.5 ? 1 : 0;
+  const emptyStars = 5 - fullStars - halfStar;
+
+  const starsHTML = '★'.repeat(fullStars) + (halfStar ? '½' : '') + '☆'.repeat(emptyStars);
+
+  let interpretation = `Your average mood score is ${avg.toFixed(2)}, shown below in stars.`;
+  interpretation += `<br>Standard deviation: ${stdDev.toFixed(2)} — `;
+  if (stdDev < 0.5) interpretation += "a fairly stable mood pattern.";
+  else if (stdDev < 1) interpretation += "some variation — worth keeping an eye on.";
+  else interpretation += "quite a bit of mood fluctuation this period.";
+
+  interpretation += `<br><br><em>Note: Even a stable pattern isn’t always ideal — check that you’re not stuck in low mood or burnout. Let this inform, not define, your pacing.</em>`;
+
+  document.getElementById('moodResult').innerHTML = `
+    <div class="stars">${starsHTML}</div>
+    <p>${interpretation}</p>
+  `;
 }
 
 function interpretR(r) {
