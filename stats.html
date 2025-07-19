@@ -133,6 +133,12 @@
 <button onclick="calculateMoodStats()">Calculate</button>
 <div id="moodResult" class="result"></div>
   
+    <h2>General Pattern Calculator</h2>
+<p>Enter any numeric data (e.g., hours slept, steps walked, meals eaten) separated by commas. This will calculate the average, standard deviation, and variance for that dataset:</p>
+<input type="text" id="generalInput" placeholder="e.g., 5, 6, 7.5, 8, 6, 7">
+<button onclick="calculateGeneralStats()">Calculate</button>
+<div class="output" id="generalResult"></div>
+
   <h2>Monthly Correlation Calculator</h2>
   <p>Enter your activity and symptom counts across the month (28 days) to see your long-term correlation trend.</p>
   <textarea id="monthlyActivities" placeholder="Enter 28 activity values, comma-separated"></textarea>
@@ -141,12 +147,6 @@
   <div class="output" id="monthlyResult"></div>
   <canvas id="monthlyChart" width="400" height="200"></canvas>
 </div>
-
-  <h2>General Pattern Calculator</h2>
-<p>Enter any numeric data (e.g., hours slept, steps walked, meals eaten) separated by commas. This will calculate the average, standard deviation, and variance for that dataset:</p>
-<input type="text" id="generalInput" placeholder="e.g., 5, 6, 7.5, 8, 6, 7">
-<button onclick="calculateGeneralStats()">Calculate</button>
-<div class="output" id="generalResult"></div>
 
 <footer class="footer">
   <a href="faq.html">FAQ</a>
